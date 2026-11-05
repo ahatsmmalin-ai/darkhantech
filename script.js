@@ -1,0 +1,20 @@
+(() => {
+ const qs=(s)=>document.querySelector(s),qsa=(s)=>[...document.querySelectorAll(s)];
+ const menuButton=qs('.menu-button'),nav=qs('.site-nav');
+ const shutMenu=()=>{nav?.classList.remove('open');menuButton?.setAttribute('aria-expanded','false');document.body.classList.remove('menu-open')};
+ menuButton?.addEventListener('click',()=>{const isOpen=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',isOpen?'true':'false');document.body.classList.toggle('menu-open',isOpen)});
+ qsa('.site-nav a').forEach(a=>a.addEventListener('click',shutMenu));
+ window.addEventListener('resize',()=>{if(innerWidth>850)shutMenu()});
+ const modal=qs('#inquiry-modal'),close=qs('.modal-close'),form=qs('#demo-form'),direction=qs('#f-direction'),result=qs('#form-result');
+ let focusBefore=null;
+ const openModal=(topic)=>{if(!modal)return;focusBefore=document.activeElement;const allowed=['Industrial','Expeditions','Sourcing','Общий запрос'];direction.value=allowed.includes(topic)?topic:'Общий запрос';result.textContent='';modal.classList.add('open');document.body.style.overflow='hidden';qs('#f-name')?.focus()};
+ const closeModal=()=>{modal?.classList.remove('open');document.body.style.overflow='';focusBefore?.focus?.()};
+ qsa('[data-open-modal]').forEach(btn=>btn.addEventListener('click',()=>openModal(btn.dataset.topic||'Общий запрос')));
+ close?.addEventListener('click',closeModal);
+ modal?.addEventListener('click',(e)=>{if(e.target===modal)closeModal()});
+ document.addEventListener('keydown',(e)=>{if(e.key==='Escape'&&modal?.classList.contains('open'))closeModal()});
+ form?.addEventListener('submit',(e)=>{e.preventDefault();if(!form.reportValidity())return;result.textContent='Форма работает как прототип. Отправка данных отключена до подключения CRM и согласования обработки персональных данных.'});
+ const chosen=qs('#chosen-category');qsa('[data-category]').forEach(btn=>btn.addEventListener('click',()=>{qsa('[data-category]').forEach(x=>x.classList.remove('active'));btn.classList.add('active');if(chosen)chosen.textContent=btn.dataset.category;const topicButton=qs('.cat-selection [data-open-modal]');if(topicButton)topicButton.dataset.topic='Industrial';}));
+ const back=qs('.back-to-top');window.addEventListener('scroll',()=>back?.classList.toggle('shown',scrollY>560),{passive:true});back?.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+ if('IntersectionObserver' in window){const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}})},{rootMargin:'0px 0px -45px 0px',threshold:.08});qsa('.reveal').forEach(el=>observer.observe(el))}else qsa('.reveal').forEach(el=>el.classList.add('visible'));
+})();

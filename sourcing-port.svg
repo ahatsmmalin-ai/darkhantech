@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="Стилизованные контейнеры и логистические маршруты">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0a2244"/><stop offset=".54" stop-color="#0d4878"/><stop offset="1" stop-color="#06162e"/></linearGradient><linearGradient id="g" x2="0" y2="1"><stop stop-color="#49c2ed"/><stop offset="1" stop-color="#0b3c67"/></linearGradient><pattern id="l" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M7 0v24M15 0v24" stroke="#9fdcf5" stroke-width="1" opacity=".26"/></pattern><pattern id="grid" width="68" height="68" patternUnits="userSpaceOnUse"><path d="M68 0H0V68" fill="none" stroke="#8fdcff" opacity=".09"/></pattern></defs>
+<rect width="1600" height="1000" fill="url(#bg)"/><rect width="1600" height="1000" fill="url(#grid)"/>
+<g fill="none" stroke="#4fcaff"><circle cx="1147" cy="350" r="245" opacity=".22"/><circle cx="1147" cy="350" r="172" opacity=".16"/><circle cx="1147" cy="350" r="93" opacity=".16"/><path d="M804 352h696M1147 35v666" stroke-dasharray="6 12" opacity=".28"/>
+<path d="M675 590C850 200 1200 130 1530 470" stroke-width="4" stroke-dasharray="13 18" opacity=".6"/><path d="M790 710C1000 570 1200 700 1540 265" stroke-width="2.4" stroke-dasharray="7 15" opacity=".47"/></g>
+<g fill="#61d7ff"><circle cx="859" cy="364" r="10"/><circle cx="1240" cy="197" r="12"/><circle cx="1472" cy="419" r="10"/></g>
+<g transform="translate(135,465)">
+<path d="M0 325l665-72 482 107-652 80z" fill="#061329"/><path d="M55 302l586-61 372 88-590 65z" fill="#0c2c4d" stroke="#6bcdf2" stroke-opacity=".4"/>
+<g transform="translate(110 48)"><path d="M0 118l428-18v174L0 300z" fill="#1272a5" stroke="#69d7fd"/><path d="M0 118l428-18v174L0 300z" fill="url(#l)"/><path d="M428 100l130 39v173l-130-38z" fill="#0a4e82" stroke="#69d7fd"/></g>
+<g transform="translate(290 -68)"><path d="M0 125l431-20v184L0 311z" fill="#2c8cb1" stroke="#a0e4ff"/><path d="M0 125l431-20v184L0 311z" fill="url(#l)"/><path d="M431 105l130 40v183l-130-39z" fill="#0d4871" stroke="#a0e4ff"/></g>
+<g transform="translate(80 -186)"><path d="M0 136l435-21v159L0 295z" fill="#0c4875" stroke="#73dafa"/><path d="M0 136l435-21v159L0 295z" fill="url(#l)"/><path d="M435 115l137 40v160l-137-41z" fill="#092e55" stroke="#73dafa"/></g>
+</g>
+<path d="M200 850h1200" stroke="#92eaff" stroke-width="1" opacity=".4"/>
+<g fill="#e9faff" font-family="Arial,sans-serif" font-size="20" letter-spacing="5" opacity=".5"><text x="1065" y="743">CHINA → WORLD</text><text x="1080" y="780" font-size="13">SUPPLIER / PROCESS / DELIVERY</text></g>
+</svg>
