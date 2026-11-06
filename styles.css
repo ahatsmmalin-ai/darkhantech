@@ -163,3 +163,97 @@
 .mini-highlights--source .mini-card{min-height:196px}
 @media(max-width:1200px){.mini-highlights{grid-template-columns:repeat(2,1fr)}.timeline-grid{grid-template-columns:repeat(2,1fr)}.process-lane{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:850px){.mini-highlights,.timeline-grid,.process-lane{grid-template-columns:1fr}.mini-card,.timeline-card,.lane-step{min-height:auto}.expedition-intro-strip{padding-top:14px}}
+
+/* DARKHANTECH / WOW editorial & calculator / responsive 2026 */
+.hero-factline{display:flex;gap:26px;flex-wrap:wrap;margin-top:28px;color:#3c647e;font-size:11px;font-weight:650;letter-spacing:.01em}.hero-factline>span{display:flex;align-items:center;gap:7px;border-top:1px solid #87c2e14f;padding-top:8px}.hero-factline b{color:#0c8fd1;font-size:15px;letter-spacing:-.03em}
+.real-world-section{background:linear-gradient(180deg,#f7fbff,#eaf4fa);position:relative}
+.real-world-section .section-head{margin-bottom:40px}
+.visual-editorial-grid{display:grid;grid-template-columns:1.46fr 1fr;grid-template-rows:240px 240px;gap:18px}
+.editorial-photo{overflow:hidden;border-radius:17px;position:relative;margin:0;background:#0b2849;box-shadow:0 20px 44px rgba(8,26,52,.12)}
+.editorial-photo--main{grid-row:span 2}
+.editorial-photo img,.exp-photo img,.source-photo-lead img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.85) contrast(1.04);transition:transform .65s ease}
+.editorial-photo:hover img,.exp-photo:hover img,.source-photo-lead:hover img{transform:scale(1.035)}
+.editorial-photo:after,.exp-photo:after{content:"";position:absolute;inset:30% 0 0;background:linear-gradient(0deg,#02152ce8,transparent 95%);pointer-events:none}
+.editorial-photo figcaption,.exp-photo figcaption{position:absolute;left:32px;right:25px;bottom:28px;z-index:2;color:#fff;display:flex;flex-direction:column;gap:7px}
+.editorial-photo figcaption span,.exp-photo figcaption small{font-size:11px;letter-spacing:.16em;color:#5ad8ff;font-weight:750}
+.editorial-photo figcaption strong,.exp-photo figcaption strong{font-size:clamp(19px,2.1vw,33px);line-height:1.06;letter-spacing:-.045em}
+.editorial-photo figcaption small{font-size:12px;color:#c5d7e7}
+.photo-source-note{font-size:12px;color:#7990a0;margin:15px 0 0;line-height:1.6}
+.cat-grid{gap:18px}
+.cat-card{position:relative;isolation:isolate;overflow:hidden;min-height:330px;padding-top:137px!important;transition:transform .3s,box-shadow .3s}
+.cat-card .cat-visual{position:absolute;top:0;left:0;right:0;height:126px;z-index:0;overflow:hidden;background:linear-gradient(130deg,#0c325b,#208cc4)}
+.cat-card .cat-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#061a35ad,#071a3530)}
+.cat-card .cat-visual img{width:100%;height:100%;display:block;object-fit:cover;filter:saturate(.7);transition:transform .5s}
+.cat-card:hover .cat-visual img{transform:scale(1.06)}
+.cat-card .cat-number,.cat-card h3,.cat-card p{position:relative;z-index:2}
+.cat-card .cat-mark{display:none}
+.cat-card .card-arr{position:absolute;z-index:3;top:148px;right:24px}
+.cat-card:hover{transform:translateY(-4px);box-shadow:0 22px 35px #142b4930}
+.procurement-section{background:#fff}
+.procurement-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;margin-top:28px}
+.procurement-card--lead{background:radial-gradient(circle at 90% 0,#104e78,transparent 43%),linear-gradient(135deg,#05142d,#083458);border:1px solid #2aa4ee55;border-radius:22px;min-height:390px;color:white;padding:43px;display:flex;flex-direction:column;align-items:flex-start;position:relative;overflow:hidden}
+.procurement-card--lead:after{content:"";position:absolute;right:-110px;bottom:-160px;border:1px solid #30c5fa3f;width:360px;height:360px;border-radius:50%;box-shadow:0 0 0 60px #29bdf906,0 0 0 120px #29bdf904}
+.procurement-card .mini-label{color:#67cefc;font-size:11px;font-weight:750;letter-spacing:.18em}
+.procurement-card h3{font-size:25px;font-weight:500;letter-spacing:-.05em;line-height:1.3;max-width:570px;margin:26px 0 4px}
+.procurement-card h3 strong{display:inline;color:#fff}
+.procurement-big{font-size:clamp(38px,4.6vw,68px);font-weight:900;letter-spacing:-.065em;color:#52d7fc;line-height:1.15;margin:10px 0}
+.procurement-card p{max-width:560px;color:#abc9df;line-height:1.6;font-size:14px}
+.procurement-bottom{border-top:1px solid #a0d3ee36;margin-top:auto;padding-top:18px;color:#a0b8cd;font-size:12px;line-height:1.5}
+.cost-structure{border-radius:22px;background:#f0f7fb;padding:21px 36px;display:flex;flex-direction:column;justify-content:center}
+.cost-structure>div{padding:24px 0;display:flex;align-items:flex-start;gap:20px;border-bottom:1px solid #c6d8e5}
+.cost-structure>div:last-child{border-bottom:0}
+.cost-structure b{font-size:15px;color:#099ad9;min-width:28px}
+.cost-structure span{font-size:17px;font-weight:750;letter-spacing:-.025em;color:#0d2b43}
+.cost-structure small{display:block;color:#71899b;font-weight:450;font-size:13px;margin-top:7px;line-height:1.35}
+.calculator-section{background:radial-gradient(ellipse at 80% 0%,#10517a 0%,transparent 54%),linear-gradient(130deg,#04152d,#072a4d);color:#fff;position:relative;overflow:hidden}
+.calculator-section:before{content:"";position:absolute;inset:0;opacity:.16;background-image:linear-gradient(#3395cd33 1px,transparent 1px),linear-gradient(90deg,#3395cd33 1px,transparent 1px);background-size:70px 70px;pointer-events:none}
+.calculator-section .container{position:relative;z-index:1}
+.calc-heading{display:flex;justify-content:space-between;gap:35px;align-items:flex-end;margin-bottom:39px}
+.calc-heading .section-title{margin:10px 0 0}
+.calc-heading-note{max-width:375px;color:#a5c3d7;font-size:14px;line-height:1.7}
+.calculator-layout{display:grid;grid-template-columns:395px minmax(0,1fr);gap:18px}
+.calc-controls{background:#f5fafe;color:#112b40;border-radius:20px;padding:31px 31px 24px;box-shadow:0 28px 60px #0310275e}
+.calc-controls-head{display:flex;justify-content:space-between;align-items:center;gap:15px;color:#0679bd;font-size:10px;font-weight:800;letter-spacing:.12em;border-bottom:1px solid #c8dce8;padding-bottom:23px;margin-bottom:12px}
+.calc-controls-head span{color:#7898ac}
+.calc-field{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:15px 0;border-bottom:1px solid #d8e6ee}
+.calc-field>span{font-size:12px;font-weight:650;line-height:1.45;max-width:190px;letter-spacing:-.02em}
+.calc-field>span small{color:#94a6b5;display:none}
+.calc-input-wrap{position:relative;display:flex;align-items:center;justify-content:flex-end;flex:0 0 150px}
+.calc-input-wrap input{width:100%;border:1px solid #cddfe8;border-radius:9px;background:#fff;color:#072640;font:700 15px inherit;padding:13px 9px;min-width:0;text-align:right;outline:none;font-family:inherit;font-weight:750;font-size:14px;padding-right:12px}
+.calc-input-wrap input:focus{border-color:#00a7e5;box-shadow:0 0 0 3px #22b6f526}
+.calc-input-wrap>span{position:absolute;right:9px;bottom:-13px;color:#6d8ea2;font-size:9px;pointer-events:none}
+.calc-reset{margin-top:22px;background:transparent;border:0;padding:3px 0;color:#147cb3;font-weight:700;font-size:12px;cursor:pointer}
+.calc-results{background:linear-gradient(155deg,#0c3554dd,#06172de8);border:1px solid #41bded4e;border-radius:20px;padding:36px;box-shadow:0 20px 40px #01102238}
+.calc-mode{font-size:10px;letter-spacing:.13em;color:#7cdcff;font-weight:700}
+.calc-result-top{display:grid;grid-template-columns:1.1fr .7fr;gap:15px;padding-top:30px}
+.calc-kpi small,.calc-payback small,.calc-summary small{display:block;color:#8fb6cc;font-size:10px;font-weight:700;letter-spacing:.10em}
+.calc-kpi strong{display:block;font-size:clamp(35px,4vw,59px);letter-spacing:-.08em;color:#56dcff;margin:9px 0;line-height:1}
+.calc-kpi span,.calc-payback span{display:block;max-width:340px;font-size:12px;color:#abc6d6;line-height:1.5}
+.calc-payback{border-left:1px solid #7fb5d241;padding-left:29px}
+.calc-payback strong{display:block;font-size:clamp(43px,5vw,73px);line-height:1;letter-spacing:-.07em;margin:9px 0;color:#fff}
+.calc-chart{margin-top:38px;border-top:1px solid #a2d7f62d;padding-top:22px}
+.calc-chart-header{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:25px}.calc-chart-header b{font-size:15px}.calc-chart-header span{font-size:11px;color:#8eacc4}
+.chart-row{margin:17px 0}.chart-meta{display:flex;justify-content:space-between;gap:12px;font-size:12px;margin-bottom:9px;color:#bcd7e8}.chart-meta b{color:#fff}
+.calc-track{height:10px;border-radius:20px;background:#091327;overflow:hidden}.calc-track i{display:block;height:100%;border-radius:20px;background:linear-gradient(90deg,#1ab0ee,#a5e6ff);transition:width .35s}.chart-row:nth-last-child(1) .calc-track i{background:linear-gradient(90deg,#1b5e9c,#0fd9cf)}
+.calc-summary{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px;padding-top:22px;border-top:1px solid #a2d7f62d}.calc-summary b{display:block;margin-top:8px;font-size:23px;letter-spacing:-.035em}
+.calc-disclaimer{font-size:11px;line-height:1.65;color:#9db9ca;margin:26px 0 23px}.calc-cta{background:#31cdf4;color:#041d31}
+.exp-photo-grid{display:grid;grid-template-columns:1.15fr 1fr;grid-template-rows:235px 235px;gap:18px}
+.exp-photo{background:#072346;position:relative;overflow:hidden;margin:0;border-radius:17px}.exp-photo--wide{grid-row:span 2}.exp-photo figcaption{bottom:22px;left:25px}
+.exp-photo figcaption strong{font-size:clamp(20px,2vw,29px)}
+.supplier-section{background:#eef7fc}.comparison-table-wrap{overflow-x:auto;border-radius:16px;box-shadow:0 20px 45px #06274912;background:#fff}
+.comparison-table{width:100%;border-collapse:collapse;min-width:720px}.comparison-table th,.comparison-table td{text-align:left;padding:19px 21px;border-bottom:1px solid #e4eef4;font-size:13px;white-space:nowrap}
+.comparison-table thead th{background:#061f3c;color:#fff;padding:24px 21px;font-size:12px;font-weight:750;letter-spacing:.05em}.comparison-table tbody th{color:#103b56}.comparison-table tbody tr:hover{background:#f2f9fc}.comparison-table td{color:#4b7186}
+.table-dot{display:inline-block;width:7px;height:7px;background:#ffbb58;border-radius:50%;margin-right:7px}.table-dot.positive{background:#07b4bc}.table-foot{font-size:12px;color:#6a899e;margin-top:16px}
+.source-photo-layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.source-photo-lead{height:550px;border-radius:20px;background:#073154;position:relative;overflow:hidden;box-shadow:0 20px 35px #032b4d18}
+.source-photo-lead:after{content:"";position:absolute;inset:50% 0 0;background:linear-gradient(0deg,#031d3c,transparent)}.source-photo-lead span{position:absolute;bottom:25px;left:28px;z-index:2;color:#fff;font-weight:750;font-size:11px;letter-spacing:.14em}
+.source-photo-copy .body-large,.source-photo-copy>p{line-height:1.75;color:#607b8d;font-size:16px}.source-photo-footnote{border-left:3px solid #0bb1e7;padding:10px 16px;color:#708da0;font-size:12px;line-height:1.6}
+.home-facts-section{background:#eef7fb}.value-route-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}
+.value-route{min-height:327px;background:#071b39;color:#fff;border-radius:17px;padding:30px;display:flex;flex-direction:column;overflow:hidden;position:relative;box-shadow:0 20px 40px #051b3b1f;transition:transform .3s}
+.value-route:hover{transform:translateY(-7px)}.value-route:before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(0deg,#061730ef,#051a3577),url('hero-machine-new.webp') center / cover;filter:saturate(.75);transition:transform .4s}.value-route--two:before{background:linear-gradient(0deg,#061730ed,#051a3577),url('expedition-city.svg') center / cover}.value-route--three:before{background:linear-gradient(0deg,#061730ef,#051a3577),url('sourcing-port.svg') center / cover}.value-route>*{position:relative;z-index:1}.value-route>span{color:#46cdfa;font-size:11px;letter-spacing:.14em;font-weight:800}.value-route h3{font-size:28px;letter-spacing:-.045em;line-height:1.08;margin:55px 0 11px}.value-route p{font-size:13px;color:#bad1df;line-height:1.55;margin:0 0 24px}.value-route b{font-size:12px;letter-spacing:.02em;color:#73e0ff;margin-top:auto}
+.asset-credits{background:#031226;color:#829aaf;border-top:1px solid #ffffff18;font-size:10px;padding:12px 0;line-height:1.5}.asset-credits a{color:#6bc9e6;text-decoration:underline;text-underline-offset:3px}
+.simple-header{padding:26px max(22px,6%);display:flex;justify-content:space-between;background:#03172e;color:#fff;font-size:12px;letter-spacing:.08em}.simple-header a{color:#79dcff}
+.credits-main{padding:70px 0 120px}.credits-main>div>p{max-width:760px;color:#638298;line-height:1.8}.credits-list{max-width:980px;margin-top:35px;background:#f4f9fc;border-radius:18px;overflow:hidden}.credits-list article{display:grid;grid-template-columns:1.2fr 1fr auto;gap:15px;align-items:center;padding:21px 25px;border-bottom:1px solid #dce8ef}.credits-list article b{font-size:14px}.credits-list article span{color:#698395;font-size:12px}.credits-list article a{color:#0086c6;font-weight:700;font-size:12px}.credits-notice{margin-top:30px;font-size:12px}
+@media(max-width:1100px){.calculator-layout{grid-template-columns:340px minmax(0,1fr)}.calc-results{padding:28px}.procurement-card--lead{padding:32px}.hero-factline{display:none}}
+@media(max-width:850px){.visual-editorial-grid,.exp-photo-grid{grid-template-columns:1fr 1fr;grid-template-rows:270px 250px}.editorial-photo--main,.exp-photo--wide{grid-column:span 2;grid-row:auto}.calculator-layout,.procurement-grid,.source-photo-layout{grid-template-columns:1fr}.value-route-grid{grid-template-columns:1fr}.value-route{min-height:280px}.source-photo-lead{height:370px}.calc-heading{flex-direction:column;align-items:flex-start}.calc-heading-note{max-width:100%}.credits-list article{grid-template-columns:1fr}}
+@media(max-width:560px){.visual-editorial-grid,.exp-photo-grid{grid-template-columns:1fr;grid-template-rows:auto;gap:12px}.editorial-photo,.exp-photo{height:220px}.editorial-photo--main,.exp-photo--wide{grid-column:auto;height:350px}.editorial-photo figcaption,.exp-photo figcaption{left:20px;bottom:20px}.cat-card{min-height:320px}.cat-visual{height:130px}.procurement-card--lead{min-height:385px}.cost-structure{padding:15px 25px}.calc-controls{padding:24px 20px}.calc-results{padding:24px 18px}.calc-result-top{grid-template-columns:1fr 1fr;gap:10px}.calc-kpi strong{font-size:clamp(27px,7vw,42px)}.calc-payback{padding-left:14px}.calc-payback strong{font-size:43px}.calc-chart-header{flex-direction:column;align-items:flex-start}.calc-field>span{max-width:140px}.calc-input-wrap{flex-basis:135px}.calc-summary b{font-size:18px}.source-photo-lead{height:290px}.credits-main{padding:45px 0}.credits-list article{padding:16px}.editorial-photo img,.exp-photo img{object-position:center}}
