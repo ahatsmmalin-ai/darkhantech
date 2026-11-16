@@ -1,0 +1,45 @@
+
+/* DARKHANTECH — catalogue stage / exact scope */
+@media(min-width:921px) and (max-width:1230px){.desktop-nav{gap:12px}.desktop-nav a{font-size:10px}.header-inner{gap:12px}.brand{font-size:17px}.btn-header{padding-inline:10px}}
+@media(min-width:921px) and (max-width:1060px){.header-small-link{display:none}}
+.catalog-section{background:#f2f0eb;color:#142229;padding-block:74px 80px}
+.catalog-section .eyebrow{color:#986c38}.catalog-section .eyebrow:before{background:#a87742}.catalog-section h2 em{color:#ab7a43}.catalog-section .section-heading>p{color:#526063}
+.catalog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.catalog-card{background:#fff;border:1px solid #d9dfda;border-radius:15px;overflow:hidden;display:flex;flex-direction:column;min-width:0;color:#11252b;box-shadow:0 10px 28px #20323a0c;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+.catalog-card:hover{transform:translateY(-5px);box-shadow:0 18px 34px #20323a20;border-color:#b39365}
+.catalog-image{height:205px;position:relative;display:block;overflow:hidden;background:#243039}
+.catalog-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+.catalog-card:hover .catalog-image img{transform:scale(1.045)}
+.catalog-num{position:absolute;top:15px;left:15px;color:#ecd5ac;background:#0c1b20d9;border:1px solid #ffffff2e;padding:8px 11px;border-radius:6px;font-size:11px;letter-spacing:.1em;font-weight:800}
+.catalog-info{display:flex;flex:1;flex-direction:column;gap:10px;padding:22px 22px 23px;min-height:168px}
+.catalog-info strong{font-size:clamp(21px,1.65vw,28px);letter-spacing:-.045em;line-height:1.11}
+.catalog-info>span{font-size:13px;color:#58696c;line-height:1.55}
+.catalog-info b{font-size:12px;color:#92642f;margin-top:auto;padding-top:10px;display:flex;justify-content:space-between;gap:10px}
+.catalog-info i{font-style:normal;font-size:18px}
+.catalog-caption{font-size:12px;color:#687276;margin:24px 0 0;line-height:1.65}
+.home-faq{background:#e6e9e6;color:#152429}.home-faq .eyebrow{color:#a3783e}.home-faq .eyebrow:before{background:#a3783e}.home-faq h2 em{color:#9f7640}.home-faq .section-heading>p{color:#566569}
+.faq-list{display:grid;grid-template-columns:1fr 1fr;gap:14px}.faq-list details{background:white;border:1px solid #d6dddb;border-radius:11px;padding:23px 25px;align-self:start}.faq-list summary{font-size:16px;line-height:1.45;font-weight:750;cursor:pointer;list-style:none}.faq-list summary:after{content:'+';float:right;color:#ac7e46;margin-left:10px;font-weight:400;font-size:21px}.faq-list details[open] summary:after{content:'−'}.faq-list p{margin:14px 0 0;color:#526368;font-size:13px;line-height:1.7}
+.catalog-inline-card{min-width:0;display:block;border:1px solid rgba(214,188,148,.24);border-radius:13px;background:#102329;overflow:hidden;transition:transform .2s,border-color .2s}
+.catalog-inline-card:hover{transform:translateY(-3px);border-color:#d3ae76}
+.catalog-inline-card img{width:100%;height:205px;object-fit:cover}
+.catalog-inline-copy{display:flex;flex-direction:column;gap:7px;padding:16px 19px 19px;min-height:177px}
+.catalog-inline-copy small{font-size:10px;letter-spacing:.12em;color:#deb984;font-weight:800}
+.catalog-inline-copy strong{font-size:23px;line-height:1.12;letter-spacing:-.035em}
+.catalog-inline-copy>span{font-size:12px;line-height:1.5;color:#bdcbce}
+.catalog-inline-copy b{font-size:12px;color:#d5b280;margin-top:auto}
+.catalog-hero{position:relative;overflow:hidden;min-height:480px;background:#09171b}
+.catalog-hero-media{position:absolute;inset:0;background-position:50% 50%;background-size:cover;filter:saturate(.8)}
+.catalog-hero-inner{min-height:480px;position:relative;display:flex;align-items:center;padding-block:72px}
+.catalog-hero-inner>div{max-width:760px}.catalog-breadcrumb{color:#dad5cd;font-size:12px;display:block;margin-bottom:40px}.catalog-hero h1{font-size:clamp(45px,5.2vw,81px);line-height:1.05;margin:19px 0 22px}.catalog-hero p{max-width:630px;line-height:1.7;font-size:16px;color:#e4eaeb}
+.catalog-types{background:#f2f0eb;color:#11252a}.catalog-types .eyebrow{color:#987039}.catalog-types .eyebrow:before{background:#987039}.catalog-types .section-heading h2 em{color:#ad7d48}.catalog-types .section-heading>p{color:#4b6269}
+.machine-types-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.machine-type{padding:25px;min-height:235px;border:1px solid #dadfd8;border-radius:12px;background:#fff}
+.machine-type>span{font-weight:850;color:#a8783b;font-size:12px;letter-spacing:.11em}.machine-type h3{font-size:clamp(19px,1.9vw,26px);line-height:1.2;margin:27px 0 10px}.machine-type p{color:#55686c;font-size:13px;line-height:1.65;margin:0}
+.catalog-decisions{background:#0d2025}.catalog-decision-grid{display:grid;grid-template-columns:.85fr 1fr;align-items:start;gap:60px}.catalog-decision-grid h2{font-size:clamp(37px,3.4vw,56px);margin:24px 0}.catalog-decision-grid p{color:#b5c4c3;line-height:1.7;font-size:14px}.catalog-decision-grid .btn{margin-top:16px}
+.criteria-box{background:#142b30;border:1px solid #d7b2794b;border-radius:15px;padding:28px 32px}.criteria-box h3{font-size:23px;margin:0 0 16px}.criteria-box ul{margin:0;padding-left:20px}.criteria-box li{font-size:15px;color:#ebf0e9;line-height:1.75;padding:5px}.criteria-box li::marker{color:#d9b97e}.criteria-box p{padding-top:18px;border-top:1px solid #d7b2792e;margin-top:20px;font-size:12px}
+.catalog-faq{background:#e6ebe6;color:#11242a;padding-block:60px}.catalog-faq-panel{border-left:4px solid #af8750;padding-left:35px;max-width:1030px}.catalog-faq .eyebrow{color:#87623a}.catalog-faq h2{font-size:clamp(28px,3vw,42px);margin:20px 0}.catalog-faq p{font-size:15px;line-height:1.7;max-width:900px;color:#42555c}.catalog-faq .gold-link{color:#93682e}
+.catalog-other{background:#0b1b1e;padding-block:50px}.catalog-other-links{display:flex;gap:11px;flex-wrap:wrap;margin-top:23px}.catalog-other-links a{padding:12px 15px;border-radius:8px;border:1px solid #d9b6805a;color:#e0e9e6;font-size:12px}.catalog-other-links a:hover{border-color:#deb980;color:#deb980}
+@media(max-width:1000px){.machine-types-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:920px){.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.catalog-decision-grid{grid-template-columns:1fr;gap:25px}.catalog-hero,.catalog-hero-inner{min-height:410px}.catalog-hero-inner{padding-block:65px}}
+@media(max-width:610px){.catalog-grid,.machine-types-grid,.faq-list{grid-template-columns:1fr}.catalog-section{padding-block:49px}.catalog-card .catalog-image{height:190px}.catalog-inline-card img{height:190px}.catalog-hero h1{font-size:clamp(35px,8vw,52px)}.catalog-hero p{font-size:14px}.catalog-hero-inner{min-height:0;padding-block:45px}.catalog-breadcrumb{margin-bottom:30px}.criteria-box{padding:20px}.catalog-faq-panel{padding-left:17px}.catalog-faq h2{font-size:28px}}
+@media(prefers-reduced-motion:reduce){.catalog-card,.catalog-image img,.catalog-inline-card{transition:none}}

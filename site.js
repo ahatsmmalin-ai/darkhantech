@@ -2,7 +2,7 @@
 const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('.mobile-nav');
 if(menu&&nav){menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Закрыть меню':'Открыть меню')});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}))}
 const modal=document.getElementById('contact-modal'),openers=document.querySelectorAll('[data-modal]'),close=modal?.querySelector('.modal-close');let lastFocus=null;
-function openModal(){lastFocus=document.activeElement;modal?.classList.add('open');modal?.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';close?.focus()}
+function openModal(event){const model=event?.currentTarget?.dataset?.product;if(model){const t=modal?.querySelector('textarea[name="message"]');if(t)t.value='Интересует модель: '+model+'\nПожалуйста, уточните цену, комплектацию и условия поставки.';const select=modal?.querySelector('select[name="direction"]');if(select)select.value='Industrial';}lastFocus=document.activeElement;modal?.classList.add('open');modal?.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';close?.focus()}
 function closeModal(){modal?.classList.remove('open');modal?.setAttribute('aria-hidden','true');document.body.style.overflow='';lastFocus?.focus?.()}
 openers.forEach(b=>b.addEventListener('click',openModal));close?.addEventListener('click',closeModal);modal?.addEventListener('click',e=>{if(e.target===modal)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal?.classList.contains('open'))closeModal()});
 const form=document.getElementById('contact-form');
@@ -20,15 +20,45 @@ function validateAttachments(){
  return true;
 }
 selectedFiles?.addEventListener('change',()=>{validateAttachments();if(formStatus)formStatus.textContent=''});
-form?.addEventListener('submit',e=>{
- e.preventDefault();if(!validateAttachments()){if(formStatus)formStatus.textContent='Исправьте список вложений.';return}
+form?.addEventListener('submit',async e=>{
+ e.preventDefault();
+ if(!form.reportValidity())return;
+ if(!validateAttachments()){if(formStatus)formStatus.textContent='Исправьте список вложений.';return}
  const data=new FormData(form),get=k=>String(data.get(k)||'').trim();
+ const endpoint=String(window.DH_LEAD_ENDPOINT||'').trim();
+ const button=form.querySelector('button[type="submit"]');
+ if(endpoint){
+   // Use only a secure server-side relay, NEVER a Bitrix24 webhook with a secret in client JavaScript.
+   if(!/^https:\/\//i.test(endpoint)){
+     if(formStatus)formStatus.textContent='Настройка отправки неверна: нужен HTTPS-адрес защищённого обработчика.';
+     return;
+   }
+   if(button)button.disabled=true;
+   if(formStatus)formStatus.textContent='Отправляем заявку…';
+   try{
+     const response=await fetch(endpoint,{method:'POST',body:data,mode:'cors',credentials:'omit'});
+     if(!response.ok)throw new Error('HTTP '+response.status);
+     if(formStatus)formStatus.textContent='Заявка отправлена. Благодарим за обращение!';
+     form.reset();validateAttachments();
+     if(typeof window.ym==='function'&&window.DH_METRIKA_ID)window.ym(window.DH_METRIKA_ID,'reachGoal','lead_sent');
+   }catch(err){
+     if(formStatus)formStatus.textContent='Не удалось отправить заявку. Проверьте соединение или попробуйте позже. Данные остались в форме.';
+   }finally{if(button)button.disabled=false}
+   return;
+ }
  const attachments=Array.from(selectedFiles?.files||[]).map(x=>x.name);
  const body=['DARKHANTECH / ЧЕРНОВИК ОБРАЩЕНИЯ','Дата: '+new Date().toLocaleString('ru-RU'),'Имя: '+get('name'),'Контакт: '+get('contact'),'Направление: '+get('direction'),'Продукт: '+get('product'),'Задача: '+get('message'),'Вложения (их нужно отправить отдельно): '+(attachments.join(', ')||'нет'),'','Этот файл создан локально в браузере. Данные и вложения не отправлены компании.'].join('\n');
  const blob=new Blob(['\uFEFF'+body],{type:'text/plain;charset=utf-8'});
  const url=URL.createObjectURL(blob),anchor=document.createElement('a');anchor.href=url;anchor.download='DARKHANTECH-запрос.txt';document.body.append(anchor);anchor.click();anchor.remove();setTimeout(()=>URL.revokeObjectURL(url),3000);
  if(formStatus)formStatus.textContent='Текст заявки сохранён на устройстве. Файлы не отправлены и в текстовую заявку не включены. Для реальной отправки понадобится подключение почты или CRM.';
 });
+// Once an HTTPS relay is configured, switch the visible form to the actual submission mode.
+if(window.DH_LEAD_ENDPOINT&&form){
+ const send=form.querySelector('button[type="submit"]');if(send)send.textContent='Отправить заявку ↗';
+ const note=form.querySelector('.form-honesty');if(note)note.textContent='Перед отправкой убедитесь, что вы согласны передать указанные данные компании для обработки запроса.';
+ const uploadHelp=form.querySelector('.upload-label small');if(uploadHelp)uploadHelp.textContent='До 3 файлов по 20 МБ. Файлы будут отправлены вместе с заявкой.';
+}
+
 const toTop=document.querySelector('.to-top');window.addEventListener('scroll',()=>toTop?.classList.toggle('visible',window.scrollY>500),{passive:true});toTop?.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 
 // Show offline-safe local image instantly, then progressively load licensed stock photography.
@@ -137,8 +167,8 @@ function update(){
  income=Math.max(0,gain)*demand*margin,net=income+staffEffect+downtimeEffect-service-operating;
  const payback=net>0?(investment/net).toFixed(1).replace('.',',')+' мес.':'Нет окупаемости';
  const set=(id,val)=>{const el=document.getElementById(id);if(el)el.textContent=val};
- set('effect-month',rub(net));set('effect-caption',net>=0?'Расчётный эффект в месяц, не гарантия':'При этих условиях результат отрицательный');
- set('good-before',fmt(goodBefore));set('good-after',fmt(goodAfter));set('good-gain',(gain>=0?'+':'−')+fmt(Math.abs(gain)));set('payback',payback);
+ set('effect-month',rub(net));set('effect-caption',net>=0?'Оценка по введённым данным':'При этих условиях результат отрицательный');
+ set('good-before',fmt(goodBefore));set('good-after',fmt(goodAfter));set('good-gain',(gain>=0?'+':'−')+fmt(Math.abs(gain)));set('sold-gain',fmt(Math.max(0,gain)*demand));set('payback',payback);
  set('income-line',rub(income));set('staff-line',rub(staffEffect));set('downtime-line',rub(downtimeEffect));set('service-line','−'+rub(service));set('operating-line','−'+rub(operating));set('investment-line',rub(investment));
 }
 const scenarios={
