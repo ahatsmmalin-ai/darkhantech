@@ -1,0 +1,108 @@
+/* DARKHANTECH — release 10. Single scoped final layer, based on approved palette.
+   Navy #0B2D6B · Sky #0EA5FF · white #FFF · silver #818181.
+   No new global text/background overrides: historical site styles remain intact. */
+:root{--dh10-navy:#0B2D6B;--dh10-sky:#0EA5FF;--dh10-white:#fff;--dh10-silver:#818181}
+html{scroll-behavior:smooth}
+:where(a,button,input,textarea,select):focus-visible{outline:3px solid var(--dh10-sky)!important;outline-offset:3px}
+
+/* First-screen proof & CTA */
+.home-hero .hero-main h1{max-width:930px;font-size:clamp(39px,4.3vw,72px)!important;line-height:1.09!important;letter-spacing:-.048em!important}
+.home-hero .hero-main p{max-width:670px}
+.dh-proof-link{display:inline-flex;align-items:center;gap:9px;color:#E5F5FF!important;font:600 13px/1.4 Inter,sans-serif;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.48);padding:5px 0 8px;margin-top:16px;transition:gap .18s,border-color .18s}
+.dh-proof-link:hover{gap:16px;border-color:#0EA5FF}
+
+/* Exact four stated product priorities on homepage */
+#equipment-catalog .catalog-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:stretch}
+#equipment-catalog .catalog-card{min-width:0;height:100%;display:flex;flex-direction:column}
+#equipment-catalog .catalog-card .catalog-image{height:clamp(205px,17vw,245px)}
+#equipment-catalog .catalog-card .catalog-info{flex:1}
+#equipment-catalog .catalog-card .catalog-info strong{font-size:clamp(17px,1.4vw,21px);line-height:1.23}
+#equipment-catalog .catalog-card--featured{border:2px solid var(--dh10-sky)!important}
+.dh-secondary-directions{font:400 13px/1.55 Inter,sans-serif;color:#526B83;padding:18px 0 8px}
+.dh-secondary-directions a{color:#0877BD!important;font-weight:700;text-decoration:underline;text-decoration-color:#88CFF4;text-underline-offset:4px}
+
+/* Source-specific and honest after-sales section */
+.stage2-service .dh-service-cta{margin-top:6px;justify-self:start}
+.stage2-service-layout{align-items:start!important}
+.stage2-service-layout>div:first-child>p{max-width:580px}
+.stage2-service .stage2-disclaimer{max-width:1100px;font-size:12px!important;color:#658099!important}
+
+/* Consistent genuine factory photos, no fake product provenance */
+.stage2-factory-gallery.dh-real-factory-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.stage2-factory-gallery.dh-real-factory-grid figure{min-width:0;margin:0;overflow:hidden;background:#F6FAFE}
+.stage2-factory-gallery.dh-real-factory-grid figure img{width:100%;height:clamp(180px,16vw,265px);object-fit:cover;object-position:center 43%;display:block}
+.stage2-factory-gallery.dh-real-factory-grid figure figcaption{min-height:52px;display:flex;align-items:center;padding:11px 12px;font-size:12px;line-height:1.45}
+
+/* Uniform accessible form styles */
+.modal-dialog{max-width:680px!important;max-height:min(92svh,900px)!important;overflow-y:auto!important;overscroll-behavior:contain!important}
+.dh-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#contact-form{display:grid;gap:14px}
+#contact-form label{display:grid;gap:7px}
+#contact-form input:not([type="checkbox"]),#contact-form select,#contact-form textarea{width:100%;min-height:45px;padding:11px 12px;border-radius:9px;font-size:14px;line-height:1.4;background:#fff;color:#0B2D6B}
+#contact-form textarea{min-height:116px;resize:vertical}
+#contact-form .dh-form-consent{display:flex;flex-direction:row;align-items:flex-start;gap:11px;font:400 12px/1.52 Inter,sans-serif;color:#395574!important}
+#contact-form .dh-form-consent input{width:19px;height:19px;flex:none;margin:1px 0 0;accent-color:#0EA5FF}
+#contact-form .dh-form-consent span{color:#395574!important}
+#contact-form .dh-form-consent a{color:#067CB8!important;text-decoration:underline}
+#contact-form .form-honesty{color:#637C96!important;font-size:12px;line-height:1.55}
+#contact-form .form-result{color:#0B2D6B!important;font:600 13px/1.55 Inter,sans-serif;white-space:pre-line}
+#contact-form .form-result.is-error{color:#B43535!important}
+#contact-form .form-result.is-success{color:#086E4C!important}
+#contact-form .dh-submit-bar{display:flex;align-items:center;gap:15px}
+#contact-form .dh-submit-bar button{min-height:48px}
+#contact-form button[disabled]{opacity:.55;cursor:wait}
+#contact-form .dh-copy-fallback{padding:12px;border:1px solid #B6DDF5;border-radius:10px;background:#F2F9FF}
+#contact-form .dh-copy-fallback textarea{font-size:12px;line-height:1.5;max-height:170px}
+#contact-form .dh-copy-again{background:transparent;color:#066FAB;border:1px solid #B6DDF5;border-radius:8px;padding:10px 14px;font:700 12px Inter,sans-serif;cursor:pointer}
+#contact-form .dh-honeypot{position:absolute!important;left:-200vw;opacity:0;pointer-events:none;height:0;width:0;overflow:hidden}
+#contact-form .dh-direct-contacts{display:flex;flex-wrap:wrap;gap:8px}
+#contact-form .dh-direct-contacts[hidden]{display:none}
+#contact-form .dh-direct-contacts a{display:inline-flex;padding:10px 13px;border:1px solid #B6DDF5;border-radius:8px;color:#086FAF;background:#F3F9FE;text-decoration:none;font:600 12px Inter,sans-serif}
+#contact-form .dh-direct-contacts a:hover{border-color:#0EA5FF;background:#E7F5FF}
+
+/* Group three: kitchen preparation / meat */
+.dh-processing-hero{background:linear-gradient(90deg,rgba(11,45,107,.96),rgba(11,45,107,.72)),url('visual-lines.webp') center/cover;color:#fff!important;padding:clamp(95px,11vw,155px) 0 clamp(65px,7vw,110px)}
+.dh-processing-hero h1{font:700 clamp(36px,5.3vw,74px)/1.1 Montserrat,sans-serif;max-width:950px;margin:13px 0 18px;color:#fff!important;letter-spacing:-.04em}
+.dh-processing-hero h1 em{color:#0EA5FF;font-style:normal}
+.dh-processing-hero p{max-width:710px;color:#F2FAFF!important;font:400 clamp(15px,1.3vw,18px)/1.7 Inter,sans-serif;margin:0 0 25px}
+.dh-processing-content{padding:clamp(65px,7vw,100px) 0;background:#fff!important}
+.dh-processing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:30px}
+.dh-processing-card{display:flex;flex-direction:column;min-width:0;background:#fff;border:1px solid #D5E4F1;border-radius:18px;overflow:hidden;text-decoration:none;box-shadow:0 15px 37px rgba(11,45,107,.08);transition:transform .2s,box-shadow .2s}
+.dh-processing-card:hover{transform:translateY(-4px);box-shadow:0 19px 45px rgba(11,45,107,.14)}
+.dh-processing-card>img{display:block;width:100%;height:270px;object-fit:cover}
+.dh-processing-card>div{padding:25px 28px;display:flex;flex-direction:column;gap:9px;flex:1}
+.dh-processing-card small{color:#008FD4;font:700 11px/1.4 Inter,sans-serif;letter-spacing:.06em}
+.dh-processing-card h3{font:700 clamp(21px,2vw,28px)/1.25 Montserrat,sans-serif;color:#0B2D6B;margin:2px 0}
+.dh-processing-card p{font:400 14px/1.7 Inter,sans-serif;color:#567088;margin:0 0 15px;flex:1}
+.dh-processing-card strong{font:700 13px/1.45 Inter,sans-serif;color:#0079BA}
+.dh-processing-note{border-radius:16px;background:#F0F8FF;border:1px solid #D4E8F8;padding:24px 28px;margin-top:22px}
+.dh-processing-note>strong{font:700 20px Montserrat,sans-serif;color:#0B2D6B}
+.dh-processing-note p{max-width:840px;color:#526E88;font:400 14px/1.7 Inter,sans-serif}
+
+/* Data handling notice (to be reviewed by operator before going live) */
+.dh-policy{padding:clamp(110px,11vw,160px) 0 110px;background:#fff;min-height:68svh;color:#0B2D6B}
+.dh-policy .shell{max-width:880px}
+.dh-policy h1{font:700 clamp(31px,4.5vw,54px)/1.12 Montserrat,sans-serif;margin:14px 0 24px}
+.dh-policy h2{font:700 23px/1.3 Montserrat,sans-serif;color:#0B2D6B;margin:34px 0 11px}
+.dh-policy p{color:#4C6680;font:400 15px/1.75 Inter,sans-serif}
+.dh-policy-notice{border-left:4px solid #0EA5FF;background:#EDF7FF;padding:22px 26px;border-radius:8px}
+.dh-policy-notice strong{color:#0B2D6B;font:700 16px/1.4 Montserrat,sans-serif}
+
+@media(max-width:1150px){
+  #equipment-catalog .catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stage2-factory-gallery.dh-real-factory-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stage2-factory-gallery.dh-real-factory-grid figure img{height:clamp(230px,30vw,330px)}
+}
+@media(max-width:650px){
+  #equipment-catalog .catalog-grid,.dh-processing-grid{grid-template-columns:1fr}
+  #equipment-catalog .catalog-card .catalog-image{height:205px}
+  .home-hero .hero-main h1{font-size:clamp(35px,9vw,48px)!important}
+  .dh-form-grid{grid-template-columns:1fr}
+  .stage2-factory-gallery.dh-real-factory-grid{grid-template-columns:1fr}
+  .stage2-factory-gallery.dh-real-factory-grid figure img{height:260px}
+  .dh-processing-card>img{height:230px}
+  .dh-processing-card>div{padding:22px}
+  .dh-processing-note{padding:22px}
+  .modal-dialog{max-height:95svh!important}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.dh-proof-link,.dh-processing-card{transition:none}}

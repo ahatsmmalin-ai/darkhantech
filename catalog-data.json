@@ -13,7 +13,8 @@
     "directions": [
       "Полуфабрикаты",
       "Пекарни и кондитерские"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-002",
@@ -29,7 +30,8 @@
     "directions": [
       "Полуфабрикаты",
       "Пекарни и кондитерские"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-003",
@@ -45,7 +47,8 @@
     "directions": [
       "Полуфабрикаты",
       "Пекарни и кондитерские"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-004",
@@ -61,7 +64,8 @@
     "directions": [
       "Полуфабрикаты",
       "Пекарни и кондитерские"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-005",
@@ -77,7 +81,8 @@
     "directions": [
       "Полуфабрикаты",
       "Пекарни и кондитерские"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-006",
@@ -93,7 +98,8 @@
     "directions": [
       "Полуфабрикаты",
       "Пекарни и кондитерские"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-007",
@@ -109,7 +115,8 @@
     "directions": [
       "Полуфабрикаты",
       "Пекарни и кондитерские"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-008",
@@ -125,7 +132,8 @@
     "directions": [
       "Полуфабрикаты",
       "Пекарни и кондитерские"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-009",
@@ -142,7 +150,8 @@
       "Полуфабрикаты",
       "Мясопереработка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-010",
@@ -159,7 +168,8 @@
       "Полуфабрикаты",
       "Мясопереработка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-011",
@@ -175,7 +185,8 @@
     "directions": [
       "Полуфабрикаты",
       "Пекарни и кондитерские"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-012",
@@ -191,7 +202,8 @@
     "directions": [
       "Полуфабрикаты",
       "Пекарни и кондитерские"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-013",
@@ -207,7 +219,8 @@
     "directions": [
       "Полуфабрикаты",
       "Пекарни и кондитерские"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-014",
@@ -223,7 +236,8 @@
     "directions": [
       "Полуфабрикаты",
       "Пекарни и кондитерские"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-015",
@@ -239,7 +253,8 @@
     "directions": [
       "Полуфабрикаты",
       "Пекарни и кондитерские"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-016",
@@ -255,7 +270,8 @@
     "directions": [
       "Полуфабрикаты",
       "Пекарни и кондитерские"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-017",
@@ -270,7 +286,8 @@
     "href": "product-dt-017.html",
     "directions": [
       "Мясопереработка"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-018",
@@ -285,7 +302,8 @@
     "href": "product-dt-018.html",
     "directions": [
       "Мясопереработка"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-019",
@@ -300,7 +318,8 @@
     "href": "product-dt-019.html",
     "directions": [
       "Мясопереработка"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-020",
@@ -315,7 +334,8 @@
     "href": "product-dt-020.html",
     "directions": [
       "Мясопереработка"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-021",
@@ -330,7 +350,8 @@
     "href": "product-dt-021.html",
     "directions": [
       "Мясопереработка"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-022",
@@ -345,7 +366,8 @@
     "href": "product-dt-022.html",
     "directions": [
       "Мясопереработка"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-023",
@@ -361,7 +383,8 @@
     "directions": [
       "Мясопереработка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-024",
@@ -377,7 +400,8 @@
     "directions": [
       "Мясопереработка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-025",
@@ -393,7 +417,8 @@
     "directions": [
       "Мясопереработка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-026",
@@ -409,7 +434,8 @@
     "directions": [
       "Мясопереработка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-027",
@@ -425,7 +451,8 @@
     "directions": [
       "Овощеподготовка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-028",
@@ -441,7 +468,8 @@
     "directions": [
       "Овощеподготовка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-029",
@@ -457,7 +485,8 @@
     "directions": [
       "Овощеподготовка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-030",
@@ -473,7 +502,8 @@
     "directions": [
       "Овощеподготовка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-031",
@@ -489,7 +519,8 @@
     "directions": [
       "Овощеподготовка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-032",
@@ -505,7 +536,8 @@
     "directions": [
       "Овощеподготовка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-033",
@@ -521,7 +553,8 @@
     "directions": [
       "Овощеподготовка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-034",
@@ -537,7 +570,8 @@
     "directions": [
       "Овощеподготовка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-035",
@@ -553,7 +587,8 @@
     "directions": [
       "Полуфабрикаты",
       "Пекарни и кондитерские"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-036",
@@ -569,7 +604,8 @@
     "directions": [
       "Полуфабрикаты",
       "Пекарни и кондитерские"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-037",
@@ -585,7 +621,8 @@
     "directions": [
       "Полуфабрикаты",
       "Пекарни и кондитерские"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-038",
@@ -601,7 +638,8 @@
     "directions": [
       "Полуфабрикаты",
       "Пекарни и кондитерские"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-039",
@@ -617,7 +655,8 @@
     "directions": [
       "Фасовка и упаковка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-040",
@@ -633,7 +672,8 @@
     "directions": [
       "Фасовка и упаковка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-041",
@@ -649,7 +689,8 @@
     "directions": [
       "Фасовка и упаковка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-042",
@@ -665,7 +706,8 @@
     "directions": [
       "Фасовка и упаковка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-043",
@@ -681,7 +723,8 @@
     "directions": [
       "Фасовка и упаковка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-044",
@@ -697,7 +740,8 @@
     "directions": [
       "Фасовка и упаковка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-045",
@@ -713,7 +757,8 @@
     "directions": [
       "Фасовка и упаковка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-046",
@@ -729,7 +774,8 @@
     "directions": [
       "Фасовка и упаковка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-047",
@@ -745,7 +791,8 @@
     "directions": [
       "Фасовка и упаковка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-048",
@@ -761,7 +808,8 @@
     "directions": [
       "Фасовка и упаковка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-049",
@@ -777,7 +825,8 @@
     "directions": [
       "Фасовка и упаковка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
   },
   {
     "sku": "DT-050",
@@ -793,6 +842,448 @@
     "directions": [
       "Фасовка и упаковка",
       "Готовая еда и фабрики-кухни"
-    ]
+    ],
+    "imageStatus": "ready"
+  },
+  {
+    "sku": "DS-001",
+    "title": "Горизонтальный упаковочный автомат Soontrue SZ-100",
+    "type": "Горизонтальные упаковочные машины",
+    "brand": "Soontrue",
+    "model": "SZ-100",
+    "desc": "Горизонтальная упаковка отдельных пищевых изделий в пакет из рулонной плёнки.",
+    "spec": "Горизонтальная упаковка flow-pack; для штучной продукции; комплектация и формат пакета подбираются под продукт.",
+    "price": "По запросу",
+    "photo": "products/dt-042.webp",
+    "href": "product-ds-001.html",
+    "directions": [
+      "Фасовка и упаковка",
+      "Пекарни и кондитерские"
+    ],
+    "source": "E202606-Soontrue packaging machine(3) (2).pdf, страница PDF 4",
+    "source_brand": "Soontrue",
+    "source_page": 4,
+    "imageStatus": "ready"
+  },
+  {
+    "sku": "DS-002",
+    "title": "Высокоскоростная упаковочная машина Soontrue SZ-580",
+    "type": "Горизонтальные упаковочные машины",
+    "brand": "Soontrue",
+    "model": "SZ-580",
+    "desc": "Горизонтальная упаковка изделий с акцентом на производительность участка.",
+    "spec": "Серия High Speed Horizontal Packaging Machine; выпуск и размеры изделия согласовываются под проект.",
+    "price": "По запросу",
+    "photo": "products/dt-044.webp",
+    "href": "product-ds-002.html",
+    "directions": [
+      "Фасовка и упаковка",
+      "Готовая еда и фабрики-кухни"
+    ],
+    "source": "E202606-Soontrue packaging machine(3) (2).pdf, страница PDF 4",
+    "source_brand": "Soontrue",
+    "source_page": 4,
+    "imageStatus": "ready"
+  },
+  {
+    "sku": "DS-003",
+    "title": "Роторная упаковочная машина Soontrue GDS210B-10",
+    "type": "Фасовка в готовые пакеты",
+    "brand": "Soontrue",
+    "model": "GDS210B-10",
+    "desc": "Автомат для фасовки продукции в заранее изготовленные пакеты.",
+    "spec": "Роторный упаковочный автомат; использование готовых пакетов; дозирование зависит от конфигурации.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-003.webp",
+    "href": "product-ds-003.html",
+    "directions": [
+      "Фасовка и упаковка"
+    ],
+    "source": "E202606-Soontrue packaging machine(3) (2).pdf, страница PDF 14",
+    "source_brand": "Soontrue",
+    "source_page": 14,
+    "imageStatus": "review"
+  },
+  {
+    "sku": "DS-004",
+    "title": "Аппарат для пельменей Soontrue XSJ10A",
+    "type": "Пельменные и формовочные аппараты",
+    "brand": "Soontrue",
+    "model": "XSJ10A",
+    "desc": "Формование пельменей с характерным соединением краёв.",
+    "spec": "Тип: Lace Dumpling Making Machine; выбор форм и веса изделия зависит от исполнения.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-004.webp",
+    "href": "product-ds-004.html",
+    "directions": [
+      "Полуфабрикаты"
+    ],
+    "source": "E202606-Soontrue packaging machine(3) (2).pdf, страница PDF 21",
+    "source_brand": "Soontrue",
+    "source_page": 21,
+    "imageStatus": "review"
+  },
+  {
+    "sku": "DS-005",
+    "title": "Машина для изделий сиу-май Soontrue XSM10A",
+    "type": "Пельменные и формовочные аппараты",
+    "brand": "Soontrue",
+    "model": "XSM10A",
+    "desc": "Формовка изделий типа сиу-май / шумаи с раздельной подачей компонентов.",
+    "spec": "Тип: Siumai Making Machine; параметры изделия уточняются по заводской конфигурации.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-005.webp",
+    "href": "product-ds-005.html",
+    "directions": [
+      "Полуфабрикаты"
+    ],
+    "source": "E202606-Soontrue packaging machine(3) (2).pdf, страница PDF 21",
+    "source_brand": "Soontrue",
+    "source_page": 21,
+    "imageStatus": "review"
+  },
+  {
+    "sku": "DS-006",
+    "title": "Автомат для пельменей Songsheng GQ-3-SJ-FA",
+    "type": "Пельменные и формовочные аппараты",
+    "brand": "Songsheng",
+    "model": "GQ-3-SJ-FA",
+    "desc": "Полноприводное сервоформование пельменей для производственного цеха.",
+    "spec": "Производительность 200–245 шт/мин; питание 380 В; мощность 13,39 кВт; требуется пневмопитание ≥0,6 МПа.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-006.webp",
+    "href": "product-ds-006.html",
+    "directions": [
+      "Полуфабрикаты"
+    ],
+    "source": "Songsheng.pdf, страница PDF 33",
+    "source_brand": "Songsheng",
+    "source_page": 33,
+    "imageStatus": "ready"
+  },
+  {
+    "sku": "DS-007",
+    "title": "Пельменная машина Songsheng XSJ10A",
+    "type": "Пельменные и формовочные аппараты",
+    "brand": "Songsheng",
+    "model": "XSJ10A",
+    "desc": "Автоматическая формовка пельменей с характерной кромкой; разные размеры изделий.",
+    "spec": "Вес изделий 16–50 г в зависимости от исполнения; скорость 30–60 шт/мин; 220 В; 4,7 кВт.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-007.webp",
+    "href": "product-ds-007.html",
+    "directions": [
+      "Полуфабрикаты"
+    ],
+    "source": "Songsheng.pdf, страница PDF 34",
+    "source_brand": "Songsheng",
+    "source_page": 34,
+    "imageStatus": "ready"
+  },
+  {
+    "sku": "DS-008",
+    "title": "Настольный аппарат для пельменей Songsheng SJZ20A",
+    "type": "Пельменные и формовочные аппараты",
+    "brand": "Songsheng",
+    "model": "SJZ20A",
+    "desc": "Компактное оборудование для формирования пельменей в малых производствах.",
+    "spec": "Подача фарша 4–20 г; выпуск около 20–25 шт/мин, зависит от ручной подачи теста; 220 В; 1,2 кВт.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-008.webp",
+    "href": "product-ds-008.html",
+    "directions": [
+      "Полуфабрикаты"
+    ],
+    "source": "Songsheng.pdf, страница PDF 35",
+    "source_brand": "Songsheng",
+    "source_page": 35,
+    "imageStatus": "review"
+  },
+  {
+    "sku": "DS-009",
+    "title": "Упаковочный автомат KenHigh JHHS-320",
+    "type": "Вертикальные упаковочные машины",
+    "brand": "KenHigh",
+    "model": "JHHS-320",
+    "desc": "Высокоскоростная вертикальная фасовочно-упаковочная машина.",
+    "spec": "Максимальная ширина плёнки 320 мм; упаковка до 130 пак/мин; пакет из рулонной плёнки.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-009.webp",
+    "href": "product-ds-009.html",
+    "directions": [
+      "Фасовка и упаковка"
+    ],
+    "source": "KenHigh product cataloge-202606 New.pdf, страница PDF 5",
+    "source_brand": "KenHigh",
+    "source_page": 5,
+    "imageStatus": "review"
+  },
+  {
+    "sku": "DS-010",
+    "title": "Автомат для пакета quad seal KenHigh JHHS-420Q",
+    "type": "Вертикальные упаковочные машины",
+    "brand": "KenHigh",
+    "model": "JHHS-420Q",
+    "desc": "Упаковка кофе, снеков и гранул в устойчивый пакет с четырьмя сварными швами.",
+    "spec": "Скорость 40–80 пак/мин; плёнка до 420 мм; формат пакета quad seal.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-010.webp",
+    "href": "product-ds-010.html",
+    "directions": [
+      "Фасовка и упаковка"
+    ],
+    "source": "KenHigh product cataloge-202606 New.pdf, страница PDF 6",
+    "source_brand": "KenHigh",
+    "source_page": 6,
+    "imageStatus": "review"
+  },
+  {
+    "sku": "DS-011",
+    "title": "Фасовочная линия KenHigh JR-420 с мультиголовочным дозатором",
+    "type": "Фасовочно-упаковочные линии",
+    "brand": "KenHigh",
+    "model": "JR-420",
+    "desc": "Комплекс с весовым дозированием, вертикальным формированием и запайкой пакета.",
+    "spec": "До 70 пак/мин; плёнка до 420 мм; в конфигурации возможны элеватор и весовой дозатор.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-011.webp",
+    "href": "product-ds-011.html",
+    "directions": [
+      "Фасовка и упаковка"
+    ],
+    "source": "KenHigh product cataloge-202606 New.pdf, страница PDF 7",
+    "source_brand": "KenHigh",
+    "source_page": 7,
+    "imageStatus": "ready"
+  },
+  {
+    "sku": "DS-012",
+    "title": "Автомат для сыпучих продуктов Sunrise SR-FSK-1500",
+    "type": "Вертикальные упаковочные машины",
+    "brand": "SunrisePack",
+    "model": "SR-FSK-1500",
+    "desc": "Машина для автоматической упаковки сыпучих продуктов в небольшие пакеты.",
+    "spec": "Серия Automatic Multifunction Packaging Machine; совместимость продукта и вида пакета уточняется.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-012.webp",
+    "href": "product-ds-012.html",
+    "directions": [
+      "Фасовка и упаковка"
+    ],
+    "source": "Catalog-Sunrisepack.pdf, страница PDF 5",
+    "source_brand": "SunrisePack",
+    "source_page": 5,
+    "imageStatus": "review"
+  },
+  {
+    "sku": "DS-013",
+    "title": "Весовая упаковочная система Sunrise SR-FS-500/620/800",
+    "type": "Фасовочно-упаковочные линии",
+    "brand": "SunrisePack",
+    "model": "SR-FS-500/620/800",
+    "desc": "Весовое дозирование и упаковка сыпучих продуктов в пакеты.",
+    "spec": "Серия Automatic Quantitative Weighing and Packaging Machine; выбор размера исполнения по задаче.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-013.webp",
+    "href": "product-ds-013.html",
+    "directions": [
+      "Фасовка и упаковка"
+    ],
+    "source": "Catalog-Sunrisepack.pdf, страница PDF 7",
+    "source_brand": "SunrisePack",
+    "source_page": 7,
+    "imageStatus": "needs-source"
+  },
+  {
+    "sku": "DS-014",
+    "title": "Горизонтальная упаковочная машина Sunrise SR-RHFS-180/240",
+    "type": "Горизонтальные упаковочные машины",
+    "brand": "SunrisePack",
+    "model": "SR-RHFS-180/240",
+    "desc": "Горизонтальная фасовка в готовые пакеты по параметрам материала и продукта.",
+    "spec": "Серия Horizontal Packaging Machine; выбор комплектации и материала упаковки под задачу.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-014.webp",
+    "href": "product-ds-014.html",
+    "directions": [
+      "Фасовка и упаковка"
+    ],
+    "source": "Catalog-Sunrisepack.pdf, страница PDF 13",
+    "source_brand": "SunrisePack",
+    "source_page": 13,
+    "imageStatus": "needs-source"
+  },
+  {
+    "sku": "DS-015",
+    "title": "Фасовка гранул в готовые пакеты JD-PACKING",
+    "type": "Фасовка в готовые пакеты",
+    "brand": "JD-PACKING",
+    "model": "Premade Granule (серия)",
+    "desc": "Оборудование для дозирования сыпучих и гранулированных продуктов в готовые пакеты.",
+    "spec": "Машина Premade Bag Granule Packaging Machine; конкретный индекс модели определяется после выбора исполнения.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-015.webp",
+    "href": "product-ds-015.html",
+    "directions": [
+      "Фасовка и упаковка"
+    ],
+    "source": "JD-pancing.pdf, страница PDF 6",
+    "source_brand": "JD-PACKING",
+    "source_page": 6,
+    "imageStatus": "review"
+  },
+  {
+    "sku": "DS-016",
+    "title": "Шнековый дозатор и фасовка порошков JD-PACKING",
+    "type": "Весовые и шнековые дозаторы",
+    "brand": "JD-PACKING",
+    "model": "Powder Screw (серия)",
+    "desc": "Оборудование для дозирования порошков, сухих смесей и сыпучих ингредиентов.",
+    "spec": "Тип Powder Screw Filling Machine; диапазон дозирования зависит от конкретной модификации.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-016.webp",
+    "href": "product-ds-016.html",
+    "directions": [
+      "Фасовка и упаковка"
+    ],
+    "source": "JD-pancing.pdf, страница PDF 13",
+    "source_brand": "JD-PACKING",
+    "source_page": 13,
+    "imageStatus": "review"
+  },
+  {
+    "sku": "DS-017",
+    "title": "Вакуумная упаковочная машина JD-PACKING",
+    "type": "Вакуумные упаковщики",
+    "brand": "JD-PACKING",
+    "model": "Internal Vacuum (серия)",
+    "desc": "Камерная вакуумная упаковка пищевой продукции.",
+    "spec": "Серия Internal Vacuum Packing Machine; параметры камеры и производительности зависят от исполнения.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-017.webp",
+    "href": "product-ds-017.html",
+    "directions": [
+      "Фасовка и упаковка"
+    ],
+    "source": "JD-pancing.pdf, страница PDF 22",
+    "source_brand": "JD-PACKING",
+    "source_page": 22,
+    "imageStatus": "ready"
+  },
+  {
+    "sku": "DS-018",
+    "title": "Компактный мультиголовочный дозатор Kenwei 1G Mini",
+    "type": "Весовые и шнековые дозаторы",
+    "brand": "Kenwei",
+    "model": "1G Mini Weigher (серия)",
+    "desc": "Мультиголовочное дозирование небольших порций сухих и гранулированных продуктов.",
+    "spec": "Тип Mini Weigher High Precision; параметры весов и точность зависят от конкретного исполнения.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-018.webp",
+    "href": "product-ds-018.html",
+    "directions": [
+      "Фасовка и упаковка"
+    ],
+    "source": "Kenwei.pdf, страница PDF 6",
+    "source_brand": "Kenwei",
+    "source_page": 6,
+    "imageStatus": "ready"
+  },
+  {
+    "sku": "DS-019",
+    "title": "Влагозащищённый весовой дозатор Kenwei 1G",
+    "type": "Весовые и шнековые дозаторы",
+    "brand": "Kenwei",
+    "model": "1G Waterproof (серия)",
+    "desc": "Дозатор для производств с повышенными требованиями к санитарной обработке.",
+    "spec": "Тип 1G Waterproof Multihead Weigher; для влажной и замороженной продукции.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-019.webp",
+    "href": "product-ds-019.html",
+    "directions": [
+      "Фасовка и упаковка",
+      "Полуфабрикаты"
+    ],
+    "source": "Kenwei.pdf, страница PDF 19",
+    "source_brand": "Kenwei",
+    "source_page": 19,
+    "imageStatus": "ready"
+  },
+  {
+    "sku": "DS-020",
+    "title": "Весовой дозатор для пельменей Kenwei 2G G14",
+    "type": "Весовые и шнековые дозаторы",
+    "brand": "Kenwei",
+    "model": "2G G14 Heads Dumpling Weigher",
+    "desc": "Дозирование пельменей и другой замороженной продукции при комплектовании упаковочной линии.",
+    "spec": "2-е поколение, 14 головок; предназначен для дозирования пельменей.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-020.webp",
+    "href": "product-ds-020.html",
+    "directions": [
+      "Фасовка и упаковка",
+      "Полуфабрикаты"
+    ],
+    "source": "Kenwei.pdf, страница PDF 31",
+    "source_brand": "Kenwei",
+    "source_page": 31,
+    "imageStatus": "ready"
+  },
+  {
+    "sku": "DS-021",
+    "title": "Мультиголовочный дозатор ZONPACK ZH-AM10",
+    "type": "Весовые и шнековые дозаторы",
+    "brand": "ZONPACK",
+    "model": "ZH-AM10",
+    "desc": "Компактная комбинационная система взвешивания для фасовки сыпучих продуктов.",
+    "spec": "Серия Mini Multihead Weigher; совместимость с продуктом и диапазон весов — по выбранной модификации.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-021.webp",
+    "href": "product-ds-021.html",
+    "directions": [
+      "Фасовка и упаковка"
+    ],
+    "source": "ZONPACK Catalog 2026.pdf, страница PDF 3",
+    "source_brand": "ZONPACK",
+    "source_page": 3,
+    "imageStatus": "needs-source"
+  },
+  {
+    "sku": "DS-022",
+    "title": "Вертикальный упаковочный автомат ZONPACK серии V",
+    "type": "Вертикальные упаковочные машины",
+    "brand": "ZONPACK",
+    "model": "V Series",
+    "desc": "Вертикальная упаковка сыпучих и гранулированных продуктов в пакеты.",
+    "spec": "V Series of Vertical Packing Machine; весовой дозатор и транспортер согласовываются в составе линии.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-022.webp",
+    "href": "product-ds-022.html",
+    "directions": [
+      "Фасовка и упаковка"
+    ],
+    "source": "ZONPACK Catalog 2026.pdf, страница PDF 10",
+    "source_brand": "ZONPACK",
+    "source_page": 10,
+    "imageStatus": "ready"
+  },
+  {
+    "sku": "DS-023",
+    "title": "Роторная линия для готовых пакетов ZONPACK ZH-BR",
+    "type": "Фасовка в готовые пакеты",
+    "brand": "ZONPACK",
+    "model": "ZH-BR",
+    "desc": "Фасовка продукта в готовые пакеты с предварительным взвешиванием.",
+    "spec": "Premade Pouch Rotary Packing System; состав линии с дозатором зависит от задачи.",
+    "price": "По запросу",
+    "photo": "catalog-clean/ds-023.webp",
+    "href": "product-ds-023.html",
+    "directions": [
+      "Фасовка и упаковка"
+    ],
+    "source": "ZONPACK Catalog 2026.pdf, страница PDF 14",
+    "source_brand": "ZONPACK",
+    "source_page": 14,
+    "imageStatus": "needs-source"
   }
 ]

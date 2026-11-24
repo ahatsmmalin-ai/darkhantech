@@ -1,0 +1,297 @@
+/* DARKHANTECH — final contrast and layout correction. 23 Nov 2026.
+   Adds scoped visual rules; no broad rules that repaint every .section/.card. */
+:root{
+  --dh-navy:#0B2D6B;
+  --dh-blue:#0EA5FF;
+  --dh-silver:#818181;
+  --dh-paper:#FFFFFF;
+  --dh-ice:#F5F9FD;
+  --dh-ink:#133559;
+  --dh-paragraph:#47617E;
+  --dh-border:#D7E6F4;
+}
+html,body{overflow-x:clip}
+
+/* Animations must never conceal content after the initial load. */
+.process-card,.proof-output-card,.direction-card,.category-card,.analysis-card,
+.case-mini,.feature-box,.team-card,.faq-list details,.founder-section .heritage-panel,
+.founder-section .founder-panel,.packaging-focus .focus-card{
+  animation:none!important;
+}
+@media(prefers-reduced-motion:no-preference){
+  .process-card,.proof-output-card,.direction-card,.category-card,.analysis-card,
+  .case-mini,.feature-box,.team-card,.faq-list details,.founder-section .home-team-card,
+  .packaging-focus .focus-card{
+    transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease;
+  }
+  .process-card:hover,.proof-output-card:hover,.direction-card:hover,
+  .category-card:hover,.analysis-card:hover,.feature-box:hover,
+  .founder-section .home-team-card:hover,.packaging-focus .focus-card:hover{
+    transform:translateY(-4px);
+  }
+}
+
+/* Dark sections: avoid white-on-white when sections have both 'section' + a modifier. */
+.section.process-section,
+.section.directions-section,
+.section.about-philosophy,
+.section.team-section,
+.section.visits-section,
+.section.exp-details,
+.section.cases-section,
+.section.calculator-section,
+.section.tech-check-section,
+.section.lab-cases,
+.section.machine-compare-section,
+.section.supplier-audit-section,
+.section.sourcing-output-section,
+.section.editorial-standards,
+.section.expedition-people,
+.section.exp-gallery-section{
+  background:var(--dh-navy)!important;
+  color:#FFFFFF!important;
+}
+.section.process-section .process-head h2,
+.section.about-philosophy h2,
+.section.team-section h2,
+.section.visits-section h2,
+.section.exp-details h2,
+.section.cases-section .section-heading h2,
+.section.calculator-section h2,
+.section.tech-check-section h2,
+.section.lab-cases h2,
+.section.machine-compare-section h2,
+.section.supplier-audit-section h2,
+.section.sourcing-output-section h2,
+.section.editorial-standards h2,
+.section.expedition-people h2,
+.section.exp-gallery-section h2{
+  color:#FFFFFF!important;
+}
+.section.process-section .process-head>p,
+.section.about-philosophy .two-column>div>p,
+.section.team-section .team-text p,
+.section.visits-section p,
+.section.exp-details p,
+.section.cases-section .section-heading>p,
+.section.sourcing-output-section p{
+  color:rgba(255,255,255,.83)!important;
+}
+
+/* 01–05 steps: restore real cards, titles and body copy. */
+.section.process-section{padding-block:clamp(58px,5.7vw,88px)!important}
+.section.process-section .process-grid{gap:clamp(12px,1.2vw,19px)}
+.section.process-section .process-card{
+  background:rgba(255,255,255,.085)!important;
+  border:1px solid rgba(255,255,255,.23)!important;
+  box-shadow:0 16px 34px rgba(3,16,47,.10)!important;
+  border-radius:16px!important;
+  min-height:220px;
+  padding:22px 20px 24px;
+  color:#FFFFFF!important;
+}
+.section.process-section .process-card:hover{
+  border-color:rgba(14,165,255,.86)!important;
+  background:rgba(255,255,255,.12)!important;
+}
+.section.process-section .process-card h3{
+  color:#FFFFFF!important;
+  font-family:Montserrat,Inter,sans-serif;
+  font-size:clamp(16px,1.15vw,19px);
+  line-height:1.28;
+  font-weight:650;
+  margin:25px 0 12px;
+}
+.section.process-section .process-card p{
+  color:rgba(255,255,255,.82)!important;
+  font-size:12px;
+  line-height:1.72;
+}
+.section.process-section .process-icon,
+.section.process-section .process-icon small{color:var(--dh-blue)!important}
+
+/* Documentary proof: clean light surfaces with visible prose. */
+.section.proof-output-section,
+.section.triple-section,
+.section.home-faq,
+.section.catalog-section,
+.section.stage2-factory,
+.section.stage2-service,
+.section.stage2-category-models{
+  background:#FFFFFF!important;
+  color:var(--dh-ink)!important;
+}
+.section.proof-output-section .section-heading h2,
+.section.home-faq .section-heading h2,
+.section.catalog-section .section-heading h2{
+  color:var(--dh-navy)!important;
+}
+.section.proof-output-section .section-heading>p,
+.section.home-faq .section-heading>p{
+  color:var(--dh-paragraph)!important;
+}
+.section.proof-output-section .proof-output-card{
+  background:#FFFFFF!important;
+  border:1px solid var(--dh-border)!important;
+  color:var(--dh-ink)!important;
+  box-shadow:0 15px 36px rgba(11,45,107,.075)!important;
+}
+.section.proof-output-section .proof-output-card h3{color:var(--dh-navy)!important}
+.section.proof-output-section .proof-output-card p{color:var(--dh-paragraph)!important}
+.section.proof-output-section .proof-output-bottom span{color:var(--dh-paragraph)!important}
+.section.proof-output-section .proof-tags span{color:var(--dh-navy)!important}
+
+/* Three-column feature block: give every surface an appropriate text color. */
+.section.triple-section .feature-box{
+  background:var(--dh-ice)!important;
+  color:var(--dh-navy)!important;
+  border:1px solid var(--dh-border)!important;
+  box-shadow:0 16px 38px rgba(11,45,107,.07)!important;
+}
+.section.triple-section .feature-box .box-heading{
+  color:var(--dh-navy)!important;
+  font-size:12px;
+}
+.section.triple-section .feature-box .box-heading a{color:#087FBE!important}
+.section.triple-section .cases-box .case-mini{
+  background:#FFFFFF!important;
+  border:1px solid var(--dh-border)!important;
+  color:var(--dh-ink)!important;
+}
+.section.triple-section .cases-box .case-mini h3{color:var(--dh-navy)!important}
+.section.triple-section .cases-box .case-mini p{color:var(--dh-paragraph)!important}
+.section.triple-section .cases-box .case-mini span:not(.case-arr){color:#0789D6!important}
+.section.triple-section .feature-box.calc-promo{
+  background:linear-gradient(120deg,rgba(11,45,107,.92),rgba(11,45,107,.74)),url('visual-lines.webp') center/cover!important;
+  color:#FFFFFF!important;
+  border-color:rgba(14,165,255,.30)!important;
+}
+.section.triple-section .calc-promo .box-heading,
+.section.triple-section .calc-promo .calc-promo-content h3{
+  color:#FFFFFF!important;
+}
+.section.triple-section .calc-promo .calc-promo-content p{
+  color:rgba(255,255,255,.88)!important;
+}
+.section.triple-section .calc-promo .calc-promo-content{
+  background:rgba(11,45,107,.31)!important;
+  border:1px solid rgba(255,255,255,.24)!important;
+}
+.section.triple-section .calc-promo .calc-promo-content .icon{color:var(--dh-blue)!important}
+.section.triple-section .cost-promo li{
+  color:var(--dh-paragraph)!important;
+  border-bottom:1px solid var(--dh-border)!important;
+}
+.section.triple-section .cost-promo li::before{color:var(--dh-blue)!important}
+.section.triple-section .cost-promo .gold-link{color:#087FBE!important}
+
+/* Dark destination cards with background photographs. */
+.section.directions-section .section-heading h2{color:#FFFFFF!important}
+.section.directions-section .section-heading>p{color:rgba(255,255,255,.80)!important}
+.section.directions-section .direction-card{
+  background:var(--dh-navy)!important;
+  color:#FFFFFF!important;
+  border:1px solid rgba(255,255,255,.18)!important;
+  box-shadow:0 18px 38px rgba(2,18,56,.17)!important;
+}
+.section.directions-section .direction-card::before{background:linear-gradient(0deg,rgba(11,45,107,.95) 1%,rgba(11,45,107,.65) 51%,rgba(11,45,107,.10) 100%),var(--photo) center/cover!important}
+.section.directions-section .direction-card h3,
+.section.directions-section .direction-card p{color:#FFFFFF!important}
+.section.directions-section .direction-card b,
+.section.directions-section .direction-card .eyebrow{color:#79D5FF!important}
+
+/* Contacts and closing CTA: all footer links must be readable. */
+.final-cta{background:var(--dh-navy)!important;color:#FFFFFF!important}
+.final-cta .final-inner{background:rgba(255,255,255,.065)!important;border:1px solid rgba(255,255,255,.20)!important}
+.final-cta h2{color:#FFFFFF!important}
+.final-cta .final-inner p{color:rgba(255,255,255,.83)!important}
+.site-footer{background:var(--dh-navy)!important;color:#FFFFFF!important}
+.site-footer .footer-grid strong{color:#FFFFFF!important;opacity:1!important}
+.site-footer .footer-grid p{color:rgba(255,255,255,.83)!important}
+.site-footer .footer-grid a:not(.brand),
+.site-footer .footer-grid button{
+  color:rgba(255,255,255,.86)!important;
+  opacity:1!important;
+  transition:color .20s ease;
+}
+.site-footer .footer-grid a:not(.brand):hover,
+.site-footer .footer-grid button:hover{color:#79D5FF!important}
+.site-footer .copyright{color:rgba(255,255,255,.74)!important}
+
+/* More dark UI in the remaining site sections. */
+.section.calculator-section .calc-form,
+.section.calculator-section .calc-report,
+.section.lab-cases .lab-workspace,
+.section.machine-compare-section .comparison-stage,
+.section.supplier-audit-section .audit-grid article,
+.section.exp-details .source-steps>div{
+  color:#FFFFFF!important;
+  background:rgba(255,255,255,.06)!important;
+  border-color:rgba(255,255,255,.16)!important;
+}
+.section.calculator-section .calc-form h3,
+.section.calculator-section .calc-report h3,
+.section.machine-compare-section .comparison-stage h3,
+.section.supplier-audit-section .audit-grid h3,
+.section.exp-details .source-steps h3{color:#FFFFFF!important}
+.section.supplier-audit-section .audit-grid p,
+.section.exp-details .source-steps p{color:rgba(255,255,255,.82)!important}
+.section.machine-compare-section .comparison-banner{
+  background:linear-gradient(120deg,rgba(14,165,255,.19),rgba(11,45,107,.44))!important;
+  border-color:rgba(255,255,255,.16)!important;
+}
+.section.machine-compare-section .comparison-table thead{background:#16437B!important}
+.section.machine-compare-section .comparison-table tbody td,
+.section.machine-compare-section .comparison-table tbody th{color:#FFFFFF!important}
+
+/* Responsive guardrails; preserve grids without text clipping. */
+@media(max-width:980px){
+  .section.process-section .process-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:700px){
+  .section.process-section .process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .section.process-section .process-card{min-height:190px}
+}
+@media(max-width:610px){
+  .section.process-section .process-grid{grid-template-columns:1fr}
+  .section.process-section .process-card{min-height:0}
+  .section.triple-section .calc-promo{min-height:300px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+
+/* Hero copy for About / Industrial / Expeditions / Sourcing.
+   Brand-refresh had forced navy text into dark photographic hero. */
+.page-hero,
+.page-hero .page-hero-layout{color:#FFFFFF!important}
+.page-hero h1,.page-hero h2,.page-hero h3,
+.page-hero .hero-side strong{
+  color:#FFFFFF!important;
+}
+.page-hero p,
+.page-hero .page-hero-layout>div>p{
+  color:rgba(255,255,255,.91)!important;
+  opacity:1!important;
+}
+.page-hero .hero-side{
+  background:rgba(11,45,107,.72)!important;
+  border:1px solid rgba(255,255,255,.24)!important;
+  border-radius:14px;
+  backdrop-filter:blur(8px);
+}
+.page-hero .hero-side span{color:#70D5FF!important}
+.page-hero .btn-ghost{border-color:rgba(255,255,255,.38)!important;color:#FFFFFF!important}
+
+/* Make small captions readable without introducing disallowed accent colors. */
+.section.triple-section .cases-box .box-heading,
+.section.triple-section .cost-promo .box-heading{color:var(--dh-navy)!important}
+.section.triple-section .cases-box .case-mini>div{background:#FFFFFF!important}
+.section.triple-section .cases-box .case-mini p{color:#47617E!important}
+
+/* Product card accents. */
+.dcat-list-section,.dcat-detail,.dcat-spec-section,.dcat-related-section{
+  color:var(--dh-ink);
+}
+.dcat-product-title,.dpc-premium-card .dcat-product-title{color:var(--dh-navy)!important}
+.dcat-filter-panel{color:var(--dh-ink)!important}
