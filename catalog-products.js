@@ -61,7 +61,12 @@ function makeCard(p){
  actions.append(more,req);footer.append(actions);copy.append(footer);c.append(copy);return c;
 }
 function syncUrl(){const q=new URLSearchParams();for(const [key,val] of [['q',search.value],['direction',direction.value],['type',type.value],['brand',brand.value]])if(val.trim())q.set(key,val.trim());const dest=location.pathname+(q.size?'?'+q:'')+location.hash;if(location.protocol==='https:'||location.protocol==='http:')history.replaceState(null,'',dest);}
-function filtered(){const q=norm(search.value);return PRODUCTS.filter(p=>(!q||norm([p.sku,p.title,p.type,p.brand,p.model,p.desc,p.spec].join(' ')).includes(q))&&(!direction.value||p.directions.includes(direction.value))&&(!type.value||p.type===type.value)&&(!brand.value||p.brand===brand.value));}
+function filtered(){const q=norm(search.value);const rows=PRODUCTS.filter(p=>(!q||norm([p.sku,p.title,p.type,p.brand,p.model,p.desc,p.spec].join(' ')).includes(q))&&(!direction.value||p.directions.includes(direction.value))&&(!type.value||p.type===type.value)&&(!brand.value||p.brand===brand.value));
+ if(direction.value==='Полуфабрикаты'){
+ const order=p=>/пельмен|формовоч|бууз|мант|котлет/i.test(p.title+' '+p.type)?0:/тестораскат/i.test(p.title+' '+p.type)?1:/фаршемес/i.test(p.title+' '+p.type)?2:/тестомес/i.test(p.title+' '+p.type)?4:3;
+ rows.sort((a,b)=>order(a)-order(b)||a.sku.localeCompare(b.sku,'ru'));
+ }
+ return rows;}
 function render(){syncUrl();const rows=filtered();const total=Math.max(1,Math.ceil(rows.length/n));page=Math.min(page,total);counter.textContent=`Найдено ${rows.length} из ${PRODUCTS.length} моделей`;grid.replaceChildren();
  if(!rows.length){const empty=el('div','dcat-empty');empty.append(el('strong','','Ничего не найдено'),el('p','','Попробуйте другой запрос или сбросьте фильтры.'));grid.append(empty)}
  else rows.slice((page-1)*n,page*n).forEach(p=>grid.append(makeCard(p)));
