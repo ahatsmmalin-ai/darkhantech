@@ -1,0 +1,8 @@
+/* V31 — чистый первый экран без плавающей фотокарточки. */
+.home-hero .shell.hero-layout { grid-template-columns: minmax(0,1fr) !important; }
+.home-hero .hero-main { max-width: 1030px !important; }
+.home-hero .hero-main h1 { max-width: 940px !important; }
+@media (max-width: 920px) {
+  .home-hero .shell.hero-layout { grid-template-columns: minmax(0,1fr) !important; }
+  .home-hero .hero-main { max-width: 100% !important; }
+}
