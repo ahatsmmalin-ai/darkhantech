@@ -66,7 +66,7 @@ if(directBox&&availableContacts.length){
    directBox.append(a);
  });
 }
-// Optional public contact links in the footer: all 86 pages use the same config.
+// Optional public contact links in the footer: the site pages use the same config.
 if(availableContacts.length){
  const foot=document.querySelector('.site-footer .footer-grid');
  if(foot){const col=document.createElement('div');col.className='dh-footer-contacts';
@@ -80,8 +80,17 @@ function serializeLead(data){
  for(const key of ['name','contact','direction','product','message'])out[key]=String(data.get(key)||'').trim();
  out.consent=data.get('consent')==='on';out.website=String(data.get('website')||'');
  const q=new URLSearchParams(location.search);
- out.utm={};for(const key of ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'])out.utm[key]=String(q.get(key)||'').slice(0,130);
+ out.utm={};
+ for(const key of ['utm_source','utm_medium','utm_campaign','utm_content','utm_term']){
+   out.utm[key]=String(q.get(key)||'').slice(0,130);
+ }
+ try {
+   if(Object.values(out.utm).some(Boolean))sessionStorage.setItem('dh_first_utm',JSON.stringify(out.utm));
+   else {const saved=JSON.parse(sessionStorage.getItem('dh_first_utm')||'{}');for(const key of Object.keys(out.utm))out.utm[key]=String(saved[key]||'').slice(0,130);}
+ } catch(_) { /* Browser may restrict session storage. */ }
  out.page=location.href.split('#')[0].slice(0,650);
+ out.referrer=String(document.referrer||'').slice(0,650);
+ out.form_id='site_contact';
  return out;
 }
 function readableLead(payload){return [

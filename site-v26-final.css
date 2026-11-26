@@ -1,0 +1,10 @@
+/* DARKHANTECH V26 — final client-approved homepage hero copy */
+.home-hero .hero-main > .eyebrow{display:block;color:#28b6ed!important;font-weight:700!important;letter-spacing:.09em!important}
+.home-hero .hero-main h1{font-weight:800!important;letter-spacing:-.035em!important;line-height:1.10!important;max-width:920px!important;text-wrap:balance}
+.home-hero .hero-main .dh-v26-focus{color:#20ade5!important;font-weight:800!important;letter-spacing:-.02em!important;line-height:1.25!important;margin:26px 0 24px!important;max-width:900px!important;font-size:clamp(20px,2.2vw,31px)!important;opacity:1!important}
+.home-hero .hero-main .dh-v26-lead{color:#fff!important;font-weight:500!important;line-height:1.5!important;max-width:760px!important;font-size:clamp(17px,1.55vw,22px)!important;margin:0 0 18px!important;opacity:1!important}
+.home-hero .hero-main .dh-v26-range{color:#cfdef1!important;font-weight:500!important;line-height:1.5!important;max-width:760px!important;font-size:clamp(16px,1.4vw,20px)!important;margin:0 0 26px!important;opacity:1!important}
+.home-hero .hero-main .hero-buttons{display:flex!important;flex-wrap:wrap;gap:14px!important;margin-top:0!important}
+.home-hero .hero-main .hero-buttons .btn{min-height:54px!important}
+@media(max-width:780px){.home-hero .hero-main .eyebrow{font-size:10px!important;letter-spacing:.08em!important}.home-hero .hero-main h1{font-size:clamp(29px,7.6vw,47px)!important;line-height:1.13!important;letter-spacing:-.035em!important;text-wrap:pretty}.home-hero .hero-main .dh-v26-focus{font-size:clamp(18px,5.2vw,26px)!important;margin:22px 0 19px!important}.home-hero .hero-main .dh-v26-lead{font-size:16px!important;line-height:1.55!important;margin-bottom:12px!important}.home-hero .hero-main .dh-v26-range{font-size:15px!important;line-height:1.55!important;margin-bottom:22px!important}.home-hero .hero-main .hero-buttons{flex-direction:column!important}.home-hero .hero-main .hero-buttons .btn{width:100%!important;justify-content:center!important;text-align:center!important}}
+@media(max-width:370px){.home-hero .hero-main h1{font-size:29px!important}}
