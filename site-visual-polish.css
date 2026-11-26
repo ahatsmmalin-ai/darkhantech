@@ -1,0 +1,116 @@
+/* DARKHANTECH — consistent visual rhythm, catalogue and responsive improvements */
+:root{--polish-focus:#e2b879;--polish-text:#dbe4e2}
+html{scroll-padding-top:86px}
+body{overflow-x:clip}
+a,button,input,select,textarea{-webkit-tap-highlight-color:transparent}
+:where(a,button,input,select,textarea,summary):focus-visible{outline:3px solid var(--polish-focus)!important;outline-offset:3px}
+:where(.btn,.dpc-request,.dpc-more,.dcat-reset){transition:background-color .2s ease,border-color .2s ease,transform .2s ease}
+:where(.btn,.dpc-request,.dpc-more):active{transform:translateY(1px)}
+/* Tighter section hierarchy; no major changes to the established art direction. */
+.section{padding-block:clamp(48px,5vw,70px)}
+.section-heading{margin-bottom:26px;gap:28px}
+.section-heading h2,.process-head h2,.two-column h2{letter-spacing:-.038em;line-height:1.12}
+.section-heading>p,.process-head>p{font-size:clamp(13px,1vw,15px);line-height:1.7}
+.process-card{min-height:0;padding:21px 20px 23px}
+.process-card p,.direction-card p,.catalog-info>span{font-size:13px;line-height:1.65}
+.direction-card{min-height:330px}
+.catalog-card{box-shadow:0 12px 28px rgba(16,42,46,.075)}
+.catalog-card .catalog-image{height:195px}
+.catalog-info{min-height:0;padding:19px 20px 21px;gap:9px}
+.catalog-info strong{font-size:clamp(21px,1.7vw,27px);line-height:1.17}
+.faq-list details{padding:20px 22px}
+.faq-list summary{font-size:15px;line-height:1.55}
+.final-cta{padding-block:38px}
+.final-inner{padding:clamp(27px,3vw,43px);gap:27px}
+.final-inner h2{line-height:1.15}
+/* Catalogue hero: remove the tilted oversized product poster and accelerate discovery. */
+.dcat-hero-inner{min-height:0;grid-template-columns:minmax(0,1.16fr) minmax(260px,.84fr);gap:clamp(30px,4vw,70px);padding-block:clamp(42px,4vw,63px)}
+.dcat-hero h1{max-width:700px;font-size:clamp(38px,4.35vw,63px);line-height:1.08;letter-spacing:-.046em;margin:14px 0 18px;text-wrap:balance}
+.dcat-hero p{font-size:15px;line-height:1.68;max-width:540px}
+.dcat-breadcrumb{margin-bottom:19px}
+.dcat-hero-photo{transform:none;aspect-ratio:1.44;max-height:390px;max-width:520px;object-fit:contain;justify-self:end;background:#f4f3ee;border-radius:20px;border:1px solid rgba(218,194,153,.65);box-shadow:0 22px 58px rgba(0,0,0,.23)}
+.dcat-hero-stat{margin-top:19px;gap:9px 12px}
+.dcat-hero-stat b{font-size:22px}
+.dcat-jump{display:inline-flex;align-items:center;gap:10px;background:#e2bd83;color:#12252a;text-decoration:none;border-radius:9px;padding:13px 18px;margin-top:24px;font-size:13px;font-weight:850;min-height:46px;box-shadow:0 8px 22px rgba(226,189,131,.12)}
+.dcat-jump:hover{background:#efd1a3;transform:translateY(-1px)}
+/* The filtering interface should be obvious without dominating the page. */
+.dcat-list-section{padding-block:clamp(45px,5vw,67px)}
+.dcat-header{margin-bottom:23px;gap:30px}
+.dcat-header h2{font-size:clamp(34px,3.3vw,49px)}
+.dcat-header p{font-size:14px}
+.dcat-filter-panel{padding:16px;gap:11px;box-shadow:0 9px 24px rgba(15,42,44,.055)}
+.dcat-filter-panel label span{font-size:12px;color:#465a59}
+.dcat-filter-panel input,.dcat-filter-panel select{font-size:14px;min-height:46px}
+.dcat-reset{font-size:13px}
+.dcat-filter-toggle{display:none}
+.dcat-results-top{margin:22px 0 16px}
+.dcat-results-top span{font-size:12px}
+.dcat-product-grid{gap:18px}
+.dpc-premium-card .dcat-product-title{line-height:1.28}
+.dpc-card-spec{font-size:12px;line-height:1.45}
+.dpc-premium-card .dcat-product-desc{font-size:13px}
+.dpc-card-price small{letter-spacing:.07em}
+.dcat-product-actions a,.dcat-product-actions button{min-height:43px}
+/* Reduce excessive space around giant product mockups and improve secondary copy. */
+.dcat-detail{padding-top:38px}
+.dcat-detail h1{font-size:clamp(34px,3.25vw,51px);line-height:1.14;letter-spacing:-.036em}
+.dcat-photo-large{aspect-ratio:1.15;max-height:540px;border-radius:20px}
+.dcat-photo-large img{max-height:540px}
+.dcat-photo-caption{font-size:12px;line-height:1.55}
+.dpc-detail-fact{font-size:13px;line-height:1.45}
+.dcat-spec-section,.dcat-related-section,.dcat-direction-products{padding-block:clamp(47px,5vw,68px)}
+/* Stronger accessible contrast for supporting information. */
+.footer-grid p,.footer-grid a:not(.brand),.footer-grid button{font-size:13px}
+.form-honesty,.file-selection{line-height:1.55}
+@media(max-width:1100px){
+ .dcat-hero-inner{grid-template-columns:1fr .75fr;gap:24px}
+ .dcat-hero h1{font-size:clamp(35px,5vw,54px)}
+ .dcat-hero-photo{max-height:350px}
+ .section-heading h2{max-width:840px}
+}
+@media(max-width:920px){
+ .dcat-hero-inner{padding-block:42px;grid-template-columns:minmax(0,1fr) 220px}
+ .dcat-hero-photo{aspect-ratio:1;max-height:255px}
+ .section-heading{gap:16px}
+ .direction-card{min-height:305px}
+}
+@media(max-width:640px){
+ html{scroll-padding-top:74px}
+ .section{padding-block:47px}
+ .section-heading{margin-bottom:20px}
+ .section-heading h2{font-size:clamp(30px,8.5vw,40px)}
+ .section-heading>p{font-size:14px}
+ .catalog-card .catalog-image{height:180px}
+ .catalog-info{padding:17px 18px 19px}
+ .direction-card{min-height:315px;padding:23px}
+ .final-cta{padding-block:22px}
+ .final-inner{padding:25px 23px}
+ .final-inner h2{font-size:clamp(29px,8vw,39px)}
+ .dcat-hero-inner{grid-template-columns:1fr;padding-block:29px 34px;gap:8px}
+ .dcat-hero h1{font-size:clamp(34px,9vw,43px);margin:11px 0 15px}
+ .dcat-hero p{font-size:14px;line-height:1.62}
+ .dcat-hero-photo{display:none}
+ .dcat-breadcrumb{margin-bottom:13px}
+ .dcat-jump{margin-top:17px;width:100%;justify-content:center}
+ .dcat-hero-stat{margin-top:16px;gap:5px 9px}
+ .dcat-list-section{padding-block:38px}
+ .dcat-header{margin-bottom:18px;gap:13px}
+ .dcat-header h2{font-size:clamp(32px,8.4vw,43px)}
+ .dcat-filter-panel{padding:13px;border-radius:13px}
+ .dcat-filter-toggle{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:44px;background:#193238;color:#fff;border:1px solid #335357;border-radius:10px;font-size:13px;font-weight:750;padding:10px 15px;margin:0 0 11px}
+ .dcat-filter-toggle .caret{transition:transform .2s}
+ .dcat-filter-toggle[aria-expanded="true"] .caret{transform:rotate(180deg)}
+ .dcat-filter-panel:not(.is-expanded) label:not(.dcat-search-label),
+ .dcat-filter-panel:not(.is-expanded) .dcat-reset{display:none}
+ .dcat-filter-panel .dcat-search-label{display:flex}
+ .dcat-filter-panel label span{font-size:12px}
+ .dcat-product-grid{gap:14px}
+ .dcat-product-actions a,.dcat-product-actions button{min-height:46px}
+ .dcat-photo-large{max-height:390px}
+ .dcat-detail h1{font-size:clamp(31px,8vw,39px)}
+ .dpc-detail-fact{font-size:13px}
+ .dcat-quick-panel{border-radius:14px}
+ .dcat-quick-grid{padding:18px}
+ .footer-grid{gap:22px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}

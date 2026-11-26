@@ -1,0 +1,274 @@
+/* DARKHANTECH — 23.11.2026 | Corrected factory photography, founder cards and clean brand styling.
+   Scoped changes only. No broad .section/.card recoloring and no opacity-based entrance animation. */
+:root {
+  --dh-navy:#0B2D6B;
+  --dh-blue:#0EA5FF;
+  --dh-white:#FFFFFF;
+  --dh-silver:#818181;
+  --dh-ink:#133559;
+  --dh-muted:#4D6784;
+  --dh-outline:#D6E5F3;
+  --dh-wash:#F5F9FD;
+}
+
+/* The heritage background must be a clean photograph — no baked-in text or fragments. */
+.founder-section .heritage-panel {
+  background:linear-gradient(90deg,rgba(11,45,107,.94) 0%,rgba(11,45,107,.81) 48%,rgba(11,45,107,.16) 100%),url('heritage-mountains-hq.webp') center center/cover no-repeat!important;
+  border-color:rgba(255,255,255,.20)!important;
+  overflow:hidden!important;
+  isolation:isolate;
+}
+.founder-section .heritage-panel::before,
+.founder-section .heritage-panel::after {content:none!important}
+.founder-section .heritage-content {position:relative;z-index:1}
+
+/* Founder cards: brand navy + white, no black-green panels or warm/gold labels. */
+.founder-section .founder-panel {
+  background:var(--dh-navy)!important;
+  border-color:rgba(255,255,255,.20)!important;
+}
+.founder-section .home-team-grid {gap:16px!important;align-items:stretch}
+.founder-section .home-team-card {
+  padding:0!important;
+  display:flex;
+  flex-direction:column;
+  background:#FFFFFF!important;
+  border:1px solid #D0E2F1!important;
+  border-radius:17px!important;
+  box-shadow:0 16px 38px rgba(2,20,59,.18)!important;
+  overflow:hidden!important;
+  color:var(--dh-navy)!important;
+  text-decoration:none;
+  min-width:0;
+}
+.founder-section .home-team-card:hover,
+.founder-section .home-team-card:focus-visible {
+  border-color:var(--dh-blue)!important;
+  box-shadow:0 20px 45px rgba(2,20,59,.24)!important;
+}
+.founder-section .home-team-photo {
+  width:100%!important;
+  display:block;
+  flex:0 0 auto;
+  height:clamp(215px,20vw,280px)!important;
+  border:0!important;
+  border-radius:0!important;
+  overflow:hidden;
+  background:#EAF3FA;
+}
+.founder-section .home-team-photo::after {content:none!important}
+.founder-section .home-team-photo img {
+  display:block;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover;
+  object-position:center 23%;
+}
+.founder-section .home-team-copy {
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:9px!important;
+  padding:20px 19px 21px!important;
+  background:#FFFFFF!important;
+}
+.founder-section .home-team-copy strong {
+  font-family:Montserrat,Inter,sans-serif;
+  color:var(--dh-navy)!important;
+  font-size:clamp(17px,1.45vw,21px)!important;
+  font-weight:700;
+  line-height:1.25;
+}
+.founder-section .home-team-copy small {
+  color:#45709A!important;
+  font-size:11px!important;
+  font-weight:600;
+  line-height:1.55!important;
+}
+.founder-section .home-team-focus {
+  color:var(--dh-muted)!important;
+  font-size:12px!important;
+  line-height:1.65!important;
+}
+.founder-section .home-team-focus b {color:var(--dh-navy)!important;font-weight:700}
+.founder-section .founder-head p,.founder-section .heritage-content p {color:rgba(255,255,255,.86)!important}
+
+/* Factory gallery: coherent media framing with clean, uncropped labels below the photograph. */
+.section.stage2-factory .stage2-factory-gallery {gap:18px;align-items:stretch}
+.section.stage2-factory .stage2-factory-gallery figure {
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+  margin:0;
+  overflow:hidden;
+  background:#FFFFFF!important;
+  border:1px solid var(--dh-outline)!important;
+  border-radius:17px;
+  box-shadow:0 13px 32px rgba(11,45,107,.09);
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+.section.stage2-factory .stage2-factory-gallery figure:hover {
+  border-color:#97CDED!important;
+  transform:translateY(-3px);
+  box-shadow:0 20px 40px rgba(11,45,107,.14);
+}
+.section.stage2-factory .stage2-factory-gallery img {
+  width:100%;
+  height:clamp(210px,17.2vw,254px)!important;
+  flex:0 0 auto;
+  object-fit:cover!important;
+  object-position:center center;
+  background:#ECF4FC;
+  border:0;
+  display:block;
+}
+.section.stage2-factory .stage2-factory-gallery figcaption {
+  flex:1;
+  display:flex;
+  align-items:center;
+  min-height:69px;
+  padding:15px 20px!important;
+  background:#FFFFFF!important;
+  color:var(--dh-navy)!important;
+  font:600 13px/1.45 Inter,system-ui,sans-serif!important;
+  border-top:1px solid #E5EEF6;
+}
+.section.stage2-factory .stage2-factory-head p,
+.section.stage2-factory .stage2-source-note {color:var(--dh-muted)!important}
+.section.stage2-factory .stage2-link {color:#0877BA!important}
+
+/* Other people cards: eliminate leftover gold accents on the team page. */
+.team-card .team-text .team-detail-role,
+.team-card .team-text b,
+.team-card .team-work-area>b,
+.industrial-people .person-tag {color:var(--dh-blue)!important}
+.team-card .team-work-area {border-top-color:rgba(14,165,255,.30)!important}
+.team-portrait--photo span {
+  background:rgba(11,45,107,.90)!important;
+  border-color:rgba(14,165,255,.42)!important;
+  color:#FFFFFF!important;
+}
+
+/* Fix a few hardcoded warm accents in the real content components. */
+.founder-section .founder-head em,
+.founder-section .heritage-content em,
+.founder-section .eyebrow,
+.team-section .eyebrow,
+.team-section h2 em {color:var(--dh-blue)!important}
+.founder-section .gold-link {color:#67C9FF!important}
+.founder-section .founder-layout>* {min-width:0}
+
+/* Header, buttons, interactive accents obey approved palette. */
+.site-header,.site-footer {background:var(--dh-navy)!important}
+.site-header .desktop-nav a:hover {color:#FFFFFF!important}
+.btn-gold,.btn-header,.packaging-focus-action .btn-gold {background:var(--dh-blue)!important;border-color:var(--dh-blue)!important;color:#FFFFFF!important}
+.to-top {background:var(--dh-blue)!important;border-color:var(--dh-blue)!important;color:#FFFFFF!important}
+
+/* Focus/hover only, no animations that hide text. */
+@media(prefers-reduced-motion:no-preference) {
+  .founder-section .home-team-card,.section.stage2-factory .stage2-factory-gallery figure{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+}
+@media(prefers-reduced-motion:reduce){
+  .founder-section .home-team-card,.section.stage2-factory .stage2-factory-gallery figure,
+  .founder-section .home-team-photo img {transition:none!important;transform:none!important}
+}
+@media(max-width:980px){
+  .founder-section .founder-layout {grid-template-columns:minmax(0,1fr)!important}
+  .founder-section .heritage-panel,.founder-section .founder-panel {border-radius:17px!important}
+  .founder-section .home-team-photo {height:clamp(230px,32vw,340px)!important}
+}
+@media(max-width:700px){
+  .section.stage2-factory .stage2-factory-gallery img {height:225px!important}
+}
+@media(max-width:610px){
+  .founder-section .home-team-grid {gap:11px!important}
+  .founder-section .home-team-photo {height:clamp(175px,46vw,230px)!important}
+  .founder-section .home-team-copy {padding:13px 11px 16px!important;gap:6px!important}
+  .founder-section .home-team-copy strong {font-size:15px!important}
+  .founder-section .home-team-copy small {font-size:10px!important}
+  .founder-section .home-team-focus {font-size:10px!important;line-height:1.5!important}
+}
+@media(max-width:370px){
+  .founder-section .home-team-grid {grid-template-columns:minmax(0,1fr)!important}
+  .founder-section .home-team-photo {height:290px!important}
+}
+
+/* Catalogue and all product detail pages — remove remaining green/beige/gold styling. */
+.dcat-hero.dcat-hero-cinematic{background-color:var(--dh-navy)!important;border-bottom-color:rgba(14,165,255,.25)!important}
+.dcat-hero.dcat-hero-cinematic::after{
+  background:linear-gradient(90deg,rgba(11,45,107,.97) 0%,rgba(11,45,107,.93) 18%,rgba(11,45,107,.83) 39%,rgba(11,45,107,.39) 74%,rgba(11,45,107,.28) 100%),linear-gradient(0deg,rgba(11,45,107,.28),transparent 48%)!important;
+}
+.dcat-hero.dcat-hero-cinematic .dcat-breadcrumb{color:#CEE4F5!important}
+.dcat-hero.dcat-hero-cinematic .dcat-hero-stat{color:#E4F2FF!important}
+.dcat-detail {background:var(--dh-wash)!important;color:var(--dh-ink)!important}
+.dcat-detail h1{color:var(--dh-navy)!important}
+.dcat-detail .dcat-mini,.dcat-detail .dcat-textlink{color:#0786CE!important}
+.dcat-detail .dcat-description,.dcat-detail .dcat-photo-caption{color:var(--dh-muted)!important}
+.dcat-detail .dcat-product-tags span{background:#FFFFFF!important;border-color:#D6E5F3!important;color:var(--dh-ink)!important}
+.dpc-detail-img-badge{background:var(--dh-navy)!important;color:#FFFFFF!important}
+.dpc-detail-fact,.dpc-detail-fact:first-child{background:#FFFFFF!important;border-color:var(--dh-outline)!important;color:var(--dh-ink)!important}
+.dcat-photo-large{background:radial-gradient(ellipse at center,#fff 25%,#F1F8FD 100%)!important;border-color:var(--dh-outline)!important}
+.dcat-spec-section{background:var(--dh-navy)!important;color:#FFFFFF!important}
+.dcat-spec-section h2,.dcat-spec-section h3{color:#FFFFFF!important}
+.dcat-spec-section p,.dcat-spec-section .dcat-spec-foot{color:rgba(255,255,255,.80)!important}
+.dcat-spec-card{background:rgba(255,255,255,.07)!important;border-color:rgba(255,255,255,.18)!important}
+.dcat-spec-card li{color:#FFFFFF!important;border-bottom-color:rgba(255,255,255,.14)!important}
+.dcat-spec-card li::before{color:var(--dh-blue)!important}
+.dcat-dir-links small{color:rgba(255,255,255,.72)!important}
+.dcat-dir-links a{color:#FFFFFF!important;border-color:rgba(255,255,255,.33)!important}
+.dcat-dir-links a:hover{background:rgba(14,165,255,.17)!important;border-color:var(--dh-blue)!important}
+.dcat-related-section{background:#FFFFFF!important;color:var(--dh-ink)!important}
+.dcat-related-section h2{color:var(--dh-navy)!important}
+.dcat-related-section h2 em{color:var(--dh-blue)!important}
+.dcat-related{background:#FFFFFF!important;border-color:var(--dh-outline)!important;color:var(--dh-ink)!important}
+.dcat-related:hover{border-color:var(--dh-blue)!important}
+.dcat-related small,.dcat-related b,.dcat-link{color:#0C85C9!important}
+.dcat-product.dpc-premium-card:hover,.dcat-teaser-card:hover{border-color:var(--dh-blue)!important}
+.dpc-card-visual{background:radial-gradient(ellipse at center,#FFFFFF,#F0F7FD 92%)!important;border-bottom-color:#E1EEF8!important}
+.dpc-card-visual .dcat-product-sku{background:var(--dh-navy)!important;color:#FFFFFF!important}
+.dpc-card-brand,.dcat-teaser-body small{color:#087CC0!important}
+.dpc-quick-trigger,.dpc-premium-card .dcat-product-actions .dpc-more{color:var(--dh-navy)!important;border-color:var(--dh-outline)!important;background:#FFFFFF!important}
+.dpc-quick-trigger:hover,.dpc-premium-card .dcat-product-actions .dpc-more:hover{background:#E8F5FF!important;border-color:#7ACAFE!important}
+.dpc-card-spec::before,.dcat-quick li::before{background:var(--dh-blue)!important}
+.dpc-card-spec,.dpc-teaser-spec span{color:var(--dh-muted)!important}
+.dcat-teaser-img{background:radial-gradient(ellipse at center,#FFFFFF,#F1F8FD 90%)!important}
+.dcat-teaser-body>a,.dcat-teaser-card .dpc-teaser-price{color:var(--dh-navy)!important}
+.dcat-teaser-body .dpc-teaser-cta{background:var(--dh-blue)!important;color:#FFFFFF!important}
+.dcat-teaser-body .dpc-teaser-cta:hover{background:#0889D2!important}
+.dcat-quick-shade{background:rgba(11,45,107,.70)!important}
+.dcat-quick-panel{background:#F5F9FD!important;border-color:var(--dh-outline)!important}
+.dcat-quick-kicker{color:#0786CE!important}
+.dcat-quick-title{color:var(--dh-navy)!important}
+.dcat-quick-actions .dcat-outline{border-color:var(--dh-outline)!important;color:var(--dh-navy)!important}
+.dcat-quick-actions .dcat-outline:hover{background:#E8F5FF!important}
+@media(max-width:1050px){
+  .dcat-hero.dcat-hero-cinematic::after{background:linear-gradient(90deg,rgba(11,45,107,.98) 0%,rgba(11,45,107,.87) 44%,rgba(11,45,107,.43) 100%)!important}
+}
+@media(max-width:640px){
+  .dcat-hero.dcat-hero-cinematic::after{background:linear-gradient(90deg,rgba(11,45,107,.97),rgba(11,45,107,.83) 72%,rgba(11,45,107,.69))!important}
+}
+
+/* About page: white profile panels need dark text, never pale text on white. */
+.section.team-section .team-card {
+  background:#FFFFFF!important;
+  color:var(--dh-ink)!important;
+  border-color:var(--dh-outline)!important;
+}
+.section.team-section .team-card .team-text{
+  background:#FFFFFF!important;
+  color:var(--dh-ink)!important;
+}
+.section.team-section .team-card .team-text h3{color:var(--dh-navy)!important}
+.section.team-section .team-card .team-text p,
+.section.team-section .team-card .team-work-area li{color:var(--dh-muted)!important}
+.section.team-section .team-card .team-detail-role,
+.section.team-section .team-card .team-work-area>b{color:#0887CE!important}
+.section.team-section .team-work-area{border-top-color:#DCE9F4!important}
+.section.team-section .team-logic{
+  background:rgba(255,255,255,.075)!important;
+  border:1px solid rgba(255,255,255,.18)!important;
+  color:#FFFFFF!important;
+  border-radius:15px;
+}
+.section.team-section .team-logic p{color:rgba(255,255,255,.88)!important}
+.section.team-section .team-logic .eyebrow{color:var(--dh-blue)!important}

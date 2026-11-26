@@ -1,0 +1,14 @@
+/* DARKHANTECH — cinematic catalogue hero, original text and interactions preserved */
+.dcat-hero.dcat-hero-cinematic{position:relative;isolation:isolate;overflow:hidden;background:#071a1d;border-bottom:1px solid rgba(212,178,119,.28)}
+.dcat-hero.dcat-hero-cinematic::before{content:"";position:absolute;inset:0;z-index:-2;background-image:url("catalog-factory-variety-2026.webp");background-repeat:no-repeat;background-size:cover;background-position:center 53%;transform:translateZ(0)}
+.dcat-hero.dcat-hero-cinematic::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(3,19,22,.98) 0%,rgba(3,19,22,.93) 18%,rgba(3,19,22,.88) 34%,rgba(3,19,22,.68) 51%,rgba(3,19,22,.08) 80%,rgba(3,19,22,.09) 100%),linear-gradient(0deg,rgba(3,19,22,.27),transparent 48%)}
+.dcat-hero.dcat-hero-cinematic .dcat-hero-inner{display:flex;align-items:center;min-height:490px;padding-block:clamp(53px,6vw,82px);gap:0}
+.dcat-hero.dcat-hero-cinematic .dcat-hero-inner>div:first-child{width:min(100%,720px);max-width:720px;position:relative;z-index:1}
+.dcat-hero.dcat-hero-cinematic .dcat-hero-photo{display:none!important}
+.dcat-hero.dcat-hero-cinematic h1{max-width:680px;font-size:clamp(38px,4.65vw,68px);line-height:1.07;text-shadow:0 2px 20px rgba(0,0,0,.11)}
+.dcat-hero.dcat-hero-cinematic p{color:#e6eceb;text-wrap:pretty;max-width:550px;font-size:15px;line-height:1.64}
+.dcat-hero.dcat-hero-cinematic .dcat-hero-stat{color:#e6ddcd}
+.dcat-hero.dcat-hero-cinematic .dcat-breadcrumb{color:#ced4d2}
+.dcat-hero.dcat-hero-cinematic .dcat-jump{margin-top:23px}
+@media(max-width:1050px){.dcat-hero.dcat-hero-cinematic::before{background-position:58% 50%}.dcat-hero.dcat-hero-cinematic::after{background:linear-gradient(90deg,rgba(3,19,22,.97) 0%,rgba(3,19,22,.91) 35%,rgba(3,19,22,.7) 66%,rgba(3,19,22,.27) 100%)}.dcat-hero.dcat-hero-cinematic .dcat-hero-inner{min-height:450px}}
+@media(max-width:640px){.dcat-hero.dcat-hero-cinematic::before{background-position:70% 50%}.dcat-hero.dcat-hero-cinematic::after{background:linear-gradient(90deg,rgba(3,19,22,.97),rgba(3,19,22,.86) 68%,rgba(3,19,22,.74)),linear-gradient(0deg,rgba(3,19,22,.46),transparent)}.dcat-hero.dcat-hero-cinematic .dcat-hero-inner{min-height:0;padding-block:40px 46px}.dcat-hero.dcat-hero-cinematic h1{font-size:clamp(34px,8.5vw,44px);max-width:480px}.dcat-hero.dcat-hero-cinematic p{font-size:14px}.dcat-hero.dcat-hero-cinematic .dcat-jump{width:100%;max-width:360px;margin-top:19px}}

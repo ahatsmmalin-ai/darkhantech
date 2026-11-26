@@ -1,0 +1,34 @@
+
+/* DARKHANTECH / independent audit iteration, 2026-11-14 */
+.desktop-nav{gap:clamp(12px,1.65vw,24px)}
+.desktop-nav a{font-size:clamp(11px,.89vw,12px);white-space:nowrap}
+.mobile-nav a[aria-current="page"]{color:#eac58c}
+.expedition-people{background:linear-gradient(160deg,#101f23 0%,#071518 90%);border-top:1px solid rgba(222,181,112,.18);border-bottom:1px solid rgba(222,181,112,.17)}
+.expedition-people-heading{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr);align-items:end;gap:34px;margin-bottom:26px}
+.expedition-people-heading h2{font-size:clamp(36px,3.6vw,58px);line-height:1.06;letter-spacing:-.045em;margin:15px 0 0}
+.expedition-people-heading h2 em{font-style:normal;color:#e7c389}
+.expedition-people-heading>p{max-width:470px;color:#c1d0cf;font-size:15px;line-height:1.72;margin:0}
+.expedition-people-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.expedition-person{min-width:0;display:grid;grid-template-columns:minmax(155px,39%) minmax(0,61%);overflow:hidden;background:linear-gradient(145deg,#183034,#0c1e23);border:1px solid rgba(218,180,115,.38);border-radius:18px;box-shadow:0 18px 55px rgba(0,0,0,.16)}
+.expedition-person-photo{min-height:420px;overflow:hidden;background:#1e2829;position:relative}
+.expedition-person-photo:after{content:'';inset:0;position:absolute;pointer-events:none;background:linear-gradient(180deg,rgba(5,14,18,0) 60%,rgba(6,17,20,.5))}
+.expedition-person-photo img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center 24%;display:block}
+.expedition-person-content{padding:clamp(23px,2.4vw,36px);display:flex;flex-direction:column;gap:13px;min-width:0;justify-content:center}
+.expedition-person-number{color:#d9ad70;font-weight:800;font-size:10px;letter-spacing:.15em}
+.expedition-person-content h3{font-size:clamp(27px,2.35vw,37px);line-height:1.08;margin:0;letter-spacing:-.035em;color:#fff}
+.expedition-person-content p{color:#c2d1d0;font-size:13px;line-height:1.7;margin:0}
+.expedition-person-content .expedition-person-role{font-weight:650;color:#f1d8b2}
+.expedition-person-responsibility{display:flex;flex-direction:column;gap:5px;border-top:1px solid rgba(224,191,139,.3);padding-top:15px;margin-top:5px}
+.expedition-person-responsibility strong{font-size:12px;color:#e6bc7c}
+.expedition-person-responsibility span{font-size:13px;color:#eff3f0;line-height:1.6}
+.expedition-people-bottom{margin-top:19px;padding:21px 27px;border:1px solid rgba(218,180,115,.25);border-radius:12px;background:#09191d;display:flex;align-items:center;justify-content:space-between;gap:35px}
+.expedition-people-bottom p{font-size:14px;line-height:1.7;color:#d6e0de;margin:0;max-width:900px}
+.expedition-people-bottom strong{color:#e3bb83}
+.expedition-people-bottom a{font-size:13px;color:#e7bd7c;font-weight:800;white-space:nowrap}
+/* More legible secondary typography, particularly for technology decisions. */
+.process-card p,.source-steps p,.exp-tiles p{font-size:clamp(12px,1vw,14px)}
+@media(max-width:1320px){.expedition-person{grid-template-columns:35% 65%}.expedition-person-photo{min-height:480px}.expedition-person-content{padding:21px}.expedition-person-content h3{font-size:26px}}
+@media(max-width:1100px){.expedition-people-grid{grid-template-columns:1fr}.expedition-person{grid-template-columns:32% 68%}.expedition-person-photo{min-height:300px}.expedition-people-heading{grid-template-columns:1fr}}
+@media(max-width:610px){.expedition-person{grid-template-columns:1fr}.expedition-person-photo{min-height:0;height:300px}.expedition-person-photo img{object-position:center 23%}.expedition-person-content{padding:23px}.expedition-person-content h3{font-size:30px}.expedition-people-heading{gap:14px}.expedition-people-heading h2{font-size:35px}.expedition-people-bottom{flex-direction:column;align-items:flex-start;padding:20px;gap:12px}}
+/* Footer has three actual content columns; avoid an unused fourth grid track. */
+@media(min-width:921px){.footer-grid{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr)}}
